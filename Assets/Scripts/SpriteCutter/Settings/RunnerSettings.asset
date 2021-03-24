@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac2fe8e9372aa2458a4a96f6417b3b6, type: 3}
+  m_Name: RunnerSettings
+  m_EditorClassIdentifier: 
+  settings:
+    packName: TestAnims
+    spriteSheet: {fileID: 2800000, guid: 247f81cb99c050f468a93080409c7a7a, type: 3}
+    columns: 4
+    rows: 4
+    ppu: 32
+    pivot: {x: 0.5, y: 0}
+    baseAnimatorController: {fileID: 0}
+    animations:
+    - name: Jump
+      from: 0
+      to: 3
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: Walk
+      from: 4
+      to: 7
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: Slide
+      from: 8
+      to: 11
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: Fall
+      from: 12
+      to: 15
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+  path: Assets/SpriteCutter/Packs

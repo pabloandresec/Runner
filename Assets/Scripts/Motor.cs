@@ -13,6 +13,8 @@ public class Motor : MonoBehaviour
     [SerializeField] private Collider2D top = null;
     [Header("Sensors")]
     [SerializeField] private Transform[] sensors = null;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float[] sensorRadios = null;
     [Header("Motion Settings")]
     [SerializeField] private MotionMode motionMode = MotionMode.ACCELERATION;
     [SerializeField] private float acceleration = 5;
@@ -20,8 +22,7 @@ public class Motor : MonoBehaviour
     [SerializeField] private float jumpForce = 6;
     [Tooltip("Solo valido en motion INSTANTANEOUS")]
     [SerializeField] private float slideSpeed = 5;
-    [SerializeField] private LayerMask groundMask;
-    [SerializeField] private float groundRadius = 0.2f;
+    
     private Vector2 currentMotion = Vector2.zero;
     private bool isGrounded = false;
     private bool topWallSensor = false;
@@ -34,12 +35,16 @@ public class Motor : MonoBehaviour
     public bool SlideState { get => slideState; }
     public bool IsGrounded { get => isGrounded; }
 
+    public Vector2 direction = Vector2.zero;
+    public Vector2 rbVelocity = Vector2.zero;
+
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(sensors[0].position, groundRadius, groundMask);
-        topWallSensor = Physics2D.OverlapCircle(sensors[2].position, groundRadius, groundMask);
-        bottomWallSensor = Physics2D.OverlapCircle(sensors[1].position, groundRadius, groundMask);
-        getUpLocked = Physics2D.OverlapCircle(sensors[3].position, groundRadius, groundMask);
+        rbVelocity = rb.velocity;
+        isGrounded = Physics2D.OverlapCircle(sensors[0].position, sensorRadios[0], groundMask);
+        topWallSensor = Physics2D.OverlapCircle(sensors[2].position, sensorRadios[2], groundMask);
+        bottomWallSensor = Physics2D.OverlapCircle(sensors[1].position, sensorRadios[1], groundMask);
+        getUpLocked = Physics2D.OverlapCircle(sensors[3].position, sensorRadios[3], groundMask);
     }
 
     public void MoveLeft(bool slide)
@@ -119,20 +124,27 @@ public class Motor : MonoBehaviour
     {
         if(isGrounded && jump && !slideState)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            if (bottomWallSensor && !topWallSensor)
+            {
+                rb.velocity = new Vector2(1, 1) * jumpForce;
+            }
+            else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
         }
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = isGrounded ? Color.red : Color.white;
-        Gizmos.DrawWireSphere(sensors[0].position, groundRadius);
+        Gizmos.DrawWireSphere(sensors[0].position, sensorRadios[0]);
         Gizmos.color = bottomWallSensor ? Color.green : Color.white;
-        Gizmos.DrawWireSphere(sensors[1].position, groundRadius);
+        Gizmos.DrawWireSphere(sensors[1].position, sensorRadios[1]);
         Gizmos.color = topWallSensor ? Color.red : Color.white;
-        Gizmos.DrawWireSphere(sensors[2].position, groundRadius);
+        Gizmos.DrawWireSphere(sensors[2].position, sensorRadios[2]);
         Gizmos.color = getUpLocked ? Color.red : Color.white;
-        Gizmos.DrawWireSphere(sensors[3].position, groundRadius);
+        Gizmos.DrawWireSphere(sensors[3].position, sensorRadios[3]);
     }
 }
 public enum MotionMode

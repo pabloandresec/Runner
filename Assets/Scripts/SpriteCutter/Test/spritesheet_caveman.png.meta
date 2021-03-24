@@ -1,0 +1,718 @@
+fileFormatVersion: 2
+guid: 247f81cb99c050f468a93080409c7a7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4827171608467291863
+    second: TestAnims(0)
+  - first:
+      213: 7820766237227392125
+    second: TestAnims(1)
+  - first:
+      213: 2823926822936961606
+    second: TestAnims(2)
+  - first:
+      213: -4482740955429575478
+    second: TestAnims(3)
+  - first:
+      213: -6741161466975773868
+    second: TestAnims(4)
+  - first:
+      213: -2597785319544328371
+    second: TestAnims(5)
+  - first:
+      213: 6598493050650367356
+    second: TestAnims(6)
+  - first:
+      213: -8123584468322879750
+    second: TestAnims(7)
+  - first:
+      213: -3359358962983411235
+    second: TestAnims(8)
+  - first:
+      213: -2429918939385161548
+    second: TestAnims(9)
+  - first:
+      213: 940598980910976260
+    second: TestAnims(10)
+  - first:
+      213: 1377371251751349510
+    second: TestAnims(11)
+  - first:
+      213: -1397608384149586240
+    second: TestAnims(12)
+  - first:
+      213: -5947990830385045478
+    second: TestAnims(13)
+  - first:
+      213: -1372733234226937146
+    second: TestAnims(14)
+  - first:
+      213: 8296507669007155595
+    second: TestAnims(15)
+  - first:
+      213: 345293579666326958
+    second: TestAnims-(0)
+  - first:
+      213: 8179479431389446563
+    second: TestAnims-(1)
+  - first:
+      213: 7548134265623819967
+    second: TestAnims-(2)
+  - first:
+      213: -7030290166254970047
+    second: TestAnims-(3)
+  - first:
+      213: -1077754943649207199
+    second: TestAnims-(4)
+  - first:
+      213: 1290418071978296439
+    second: TestAnims-(5)
+  - first:
+      213: -1791540448576676147
+    second: TestAnims-(6)
+  - first:
+      213: 175027845840746237
+    second: TestAnims-(7)
+  - first:
+      213: 4845507514734338288
+    second: TestAnims-(8)
+  - first:
+      213: -7516167480991056380
+    second: TestAnims-(9)
+  - first:
+      213: -7574207182859271455
+    second: TestAnims-(10)
+  - first:
+      213: 1958644749066792926
+    second: TestAnims-(11)
+  - first:
+      213: 3173870025988571329
+    second: TestAnims-(12)
+  - first:
+      213: -1622138631726181791
+    second: TestAnims-(13)
+  - first:
+      213: -698838653474293430
+    second: TestAnims-(14)
+  - first:
+      213: 4839118965123230559
+    second: TestAnims-(15)
+  - first:
+      213: -8626355052368168528
+    second: TestAnims-AnimA(0)
+  - first:
+      213: -7523620548264623706
+    second: TestAnims-AnimA(1)
+  - first:
+      213: 2809941421301082109
+    second: TestAnims-AnimA(2)
+  - first:
+      213: 5237922819230120751
+    second: TestAnims-AnimA(3)
+  - first:
+      213: 5615029561951379129
+    second: TestAnims-AnimB(4)
+  - first:
+      213: 3582061051275077957
+    second: TestAnims-AnimB(5)
+  - first:
+      213: 6893208184333213758
+    second: TestAnims-AnimB(6)
+  - first:
+      213: -651112871327917310
+    second: TestAnims-AnimB(7)
+  - first:
+      213: -2549293337953399489
+    second: TestAnims-AnimC(8)
+  - first:
+      213: -2989999210889906387
+    second: TestAnims-AnimC(9)
+  - first:
+      213: 4619234322747686250
+    second: TestAnims-AnimC(10)
+  - first:
+      213: -8153006401829552492
+    second: TestAnims-AnimC(11)
+  - first:
+      213: 308338907117922050
+    second: TestAnims-AnimD(12)
+  - first:
+      213: -6470390150468505226
+    second: TestAnims-AnimD(13)
+  - first:
+      213: -7787401689184987396
+    second: TestAnims-AnimD(14)
+  - first:
+      213: 2801786608555863219
+    second: TestAnims-AnimD(15)
+  - first:
+      213: -2162841994189613382
+    second: TestAnims_AnimA_0
+  - first:
+      213: -8074056748535431264
+    second: TestAnims_AnimA_1
+  - first:
+      213: -7083890586408599319
+    second: TestAnims_AnimA_2
+  - first:
+      213: 3833540408482946809
+    second: TestAnims_AnimA_3
+  - first:
+      213: -1035333681056326915
+    second: TestAnims_AnimB_4
+  - first:
+      213: 7067335820576299346
+    second: TestAnims_AnimB_5
+  - first:
+      213: -4216668086261360938
+    second: TestAnims_AnimB_6
+  - first:
+      213: -1370464711074948166
+    second: TestAnims_AnimB_7
+  - first:
+      213: -2780678091632530053
+    second: TestAnims_AnimC_8
+  - first:
+      213: -6153808751325809267
+    second: TestAnims_AnimC_9
+  - first:
+      213: 7392720206218807544
+    second: TestAnims_AnimC_10
+  - first:
+      213: -3592432083148884425
+    second: TestAnims_AnimC_11
+  - first:
+      213: 6932555504393667607
+    second: TestAnims_AnimD_12
+  - first:
+      213: -6098285927037344335
+    second: TestAnims_AnimD_13
+  - first:
+      213: -4680209034239992952
+    second: TestAnims_AnimD_14
+  - first:
+      213: -5906033303044958896
+    second: TestAnims_AnimD_15
+  - first:
+      213: 1811692152639201765
+    second: TestAnims_Jump_0
+  - first:
+      213: 7487073170554368121
+    second: TestAnims_Jump_1
+  - first:
+      213: -5968735449289124054
+    second: TestAnims_Jump_2
+  - first:
+      213: -5627929992660691293
+    second: TestAnims_Jump_3
+  - first:
+      213: -1054114602812392814
+    second: TestAnims_Walk_4
+  - first:
+      213: -485098699473225009
+    second: TestAnims_Walk_5
+  - first:
+      213: 4710426714239385382
+    second: TestAnims_Walk_6
+  - first:
+      213: 4219962436325603458
+    second: TestAnims_Walk_7
+  - first:
+      213: -5788121444662962304
+    second: TestAnims_Slide_8
+  - first:
+      213: 3445306311073390229
+    second: TestAnims_Slide_9
+  - first:
+      213: 5012975720856009175
+    second: TestAnims_Slide_10
+  - first:
+      213: 634144577089646006
+    second: TestAnims_Slide_11
+  - first:
+      213: 245177522130166488
+    second: TestAnims_Fall_12
+  - first:
+      213: -6364067126110140912
+    second: TestAnims_Fall_13
+  - first:
+      213: 1816662705945133532
+    second: TestAnims_Fall_14
+  - first:
+      213: -1799269919344958532
+    second: TestAnims_Fall_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TestAnims_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e12c600a6c642910800000000000000
+      internalID: 1811692152639201765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9703042616d67e760800000000000000
+      internalID: 7487073170554368121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2717da8bbaca2da0800000000000000
+      internalID: -5968735449289124054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a651be5d7395e1b0800000000000000
+      internalID: -5627929992660691293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ab0da8a580f51f0800000000000000
+      internalID: -1054114602812392814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaf4e09d459449f0800000000000000
+      internalID: -485098699473225009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fbfb2c32cce5140800000000000000
+      internalID: 4710426714239385382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288fdae3a71509a30800000000000000
+      internalID: 4219962436325603458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Slide_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0871b0e76367cafa0800000000000000
+      internalID: -5788121444662962304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Slide_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ed0fdf5df20df20800000000000000
+      internalID: 3445306311073390229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Slide_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9b745bbdaa19540800000000000000
+      internalID: 5012975720856009175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Slide_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd2bad022fecc800800000000000000
+      internalID: 634144577089646006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Fall_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2aa7948ab076300800000000000000
+      internalID: 245177522130166488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Fall_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016c675caaa4ea7a0800000000000000
+      internalID: -6364067126110140912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Fall_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd14f802b15163910800000000000000
+      internalID: 1816662705945133532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestAnims_Fall_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3e5629a85b707e0800000000000000
+      internalID: -1799269919344958532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
