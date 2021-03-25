@@ -86,6 +86,13 @@ public class Motor : MonoBehaviour
             slideState = slide;
             rb.velocity = currentMotion;
         }
+        else
+        {
+            if(!bottomWallSensor && !topWallSensor && rb.velocity.x < maxSpeed * 0.3f)
+            {
+                rb.AddForce(new Vector2(1, 1) * jumpForce);
+            }
+        }
     }
 
     private void MoveInstantaneous(bool slide)
@@ -124,14 +131,7 @@ public class Motor : MonoBehaviour
     {
         if(isGrounded && jump && !slideState)
         {
-            if (bottomWallSensor && !topWallSensor)
-            {
-                rb.velocity = new Vector2(1, 1) * jumpForce;
-            }
-            else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            }
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
 

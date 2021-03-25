@@ -134,7 +134,7 @@ public class SpriteCutterWindowData : ScriptableObject
                 spriteKeyFrames[s] = new ObjectReferenceKeyframe();
                 spriteKeyFrames[s].time = baseTime;
                 spriteKeyFrames[s].value = sprites[spritesIndexes[s]];
-                baseTime += 0.1f;  //.250f default
+                baseTime += 0.0833333333333333333f;  //.250f default
             }
             AnimationClipSettings setting = AnimationUtility.GetAnimationClipSettings(ac);
             setting.loopTime = true;
