@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class AnimController : MonoBehaviour
 {
-    [SerializeField] protected Animator anim;
+    [SerializeField] protected Animator[] anims;
     [SerializeField] protected Motor motor;
     [SerializeField] protected InputController ic;
 }
