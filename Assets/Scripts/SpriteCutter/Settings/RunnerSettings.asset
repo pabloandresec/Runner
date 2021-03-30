@@ -26,34 +26,41 @@ MonoBehaviour:
       to: 38
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
     - name: Run
       from: 30
       to: 35
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
     - name: JumpDown
       from: 24
       to: 27
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
     - name: Slide
       from: 18
       to: 19
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
     - name: SlideUp
       from: 12
       to: 14
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
     - name: JumpUP
       from: 6
       to: 9
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 0
     - name: Hurra
       from: 0
       to: 2
       fps: 12
       pivot: {x: 0.5, y: 0}
+      loop: 1
   path: Assets/SpriteCutter/Packs

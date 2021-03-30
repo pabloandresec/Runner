@@ -155,7 +155,7 @@ public class SpriteCutterWindowData : ScriptableObject
                 baseTime += 0.0833333333333333333f;  //.250f default
             }
             AnimationClipSettings setting = AnimationUtility.GetAnimationClipSettings(ac);
-            setting.loopTime = true;
+            setting.loopTime = settings.Animations[i].loop;
 
             AnimationUtility.SetAnimationClipSettings(ac, setting);
             AnimationUtility.SetObjectReferenceCurve(ac, spriteBinding, spriteKeyFrames);

@@ -10,4 +10,5 @@ public struct CustomAnimationRange
     public int to;
     public int fps;
     public Vector2 pivot;
+    public bool loop;
 }
