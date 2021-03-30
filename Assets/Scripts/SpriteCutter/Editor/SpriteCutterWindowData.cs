@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Animations;
 using UnityEditor;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 public class SpriteCutterWindowData : ScriptableObject
 {
     [SerializeField] private SpriteCutterSettings settings;
+    AnimationClipOverrides clipOverrides;
     [SerializeField] private string path = "Assets/Prefabs/Clothing";
 
     public SpriteCutterSettings Settings { get => settings; }
@@ -16,7 +18,26 @@ public class SpriteCutterWindowData : ScriptableObject
     {
         Sprite[] sprites = ExtractSprites(settings.SpriteSheet, settings.Columns, settings.Rows);
         AnimationClip[] animations = CreateAnimations(sprites);
-        //SaveSpritesToDisk(sprites);
+        PopulateAnimator(animations);
+    }
+
+    private void PopulateAnimator(AnimationClip[] clips)
+    {
+        AnimatorOverrideController aoc = new AnimatorOverrideController(settings.BaseAnimatorController);
+        aoc.name = settings.PackName + "_AOC";
+        clipOverrides = new AnimationClipOverrides(aoc.overridesCount);
+        aoc.GetOverrides(clipOverrides);
+
+        for (int i = 0; i < clips.Length; i++)
+        {
+            Debug.Log("Override " + i + " name = " + clips[i].name);
+            clipOverrides[clips[i].name] = clips[i];
+        }
+
+        aoc.ApplyOverrides(clipOverrides);
+        AssetDatabase.CreateAsset(aoc, path + "/" + settings.PackName + "/Animations/" + settings.PackName + ".overrideController");
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 
     private void SaveSpritesToDisk(Sprite[] sprites)
@@ -63,7 +84,7 @@ public class SpriteCutterWindowData : ScriptableObject
                 meta.rect = loc;
                 meta.alignment = 7;
                 meta.pivot = new Vector2(0.5f, 0f);
-                meta.name = settings.PackName + "_" + settings.GetSpriteAnimName(sIndex) + "_" + sIndex;
+                meta.name = sIndex.ToString();
                 metasList.Add(meta);
                 sIndex++;
             }
@@ -108,14 +129,11 @@ public class SpriteCutterWindowData : ScriptableObject
         Debug.Log("Creando " + settings.Animations.Length + " animaciones con " + sprites.Length + " sprites");
         AnimationClip[] clips = new AnimationClip[settings.Animations.Length];
 
-        for (int i = 0; i < clips.Length; i++)
+        for (int i = 0; i < settings.Animations.Length; i++)
         {
+            Debug.LogWarning("PROCCESING " + settings.Animations[i].name);
             int[] spritesIndexes = GetAnimationIndexes(i);
-            for (int j = 0; j < spritesIndexes.Length; j++)
-            {
-                Debug.Log(j);
-            }
-            Debug.Log(settings.Animations[i].name + " has " + spritesIndexes.Length);
+            Debug.Log(settings.Animations[i].name + " has " + spritesIndexes.Length + " frames");
 
             AnimationClip ac = new AnimationClip();
             ac.name = settings.Animations[i].name;
@@ -128,7 +146,7 @@ public class SpriteCutterWindowData : ScriptableObject
 
             float baseTime = 0;
             ObjectReferenceKeyframe[] spriteKeyFrames = new ObjectReferenceKeyframe[spritesIndexes.Length];
-            float step = 1 / settings.Animations[i].fps;
+
             for (int s = 0; s < spritesIndexes.Length; s++)
             {
                 spriteKeyFrames[s] = new ObjectReferenceKeyframe();
@@ -156,8 +174,10 @@ public class SpriteCutterWindowData : ScriptableObject
     {
         List<int> indexes = new List<int>();
         int currentIndex = settings.Animations[animationIndex].from;
-        while(currentIndex <= settings.Animations[animationIndex].to)
+        Debug.Log(settings.Animations[animationIndex].name + " indices are:");
+        while (currentIndex <= settings.Animations[animationIndex].to)
         {
+            Debug.Log("i: " + currentIndex);
             indexes.Add(currentIndex);
             currentIndex++;
         }

@@ -13,32 +13,47 @@ MonoBehaviour:
   m_Name: RunnerSettings
   m_EditorClassIdentifier: 
   settings:
-    packName: TestAnims
-    spriteSheet: {fileID: 2800000, guid: 247f81cb99c050f468a93080409c7a7a, type: 3}
-    columns: 4
-    rows: 4
-    ppu: 32
+    packName: testropa1
+    spriteSheet: {fileID: 2800000, guid: 56bd04115d9f13347b3f5def4c519ea2, type: 3}
+    columns: 6
+    rows: 7
+    ppu: 60
     pivot: {x: 0.5, y: 0}
-    baseAnimatorController: {fileID: 0}
+    baseAnimatorController: {fileID: 9100000, guid: cb791e0bd91f9fd42bed4dc81f7ee055, type: 2}
     animations:
-    - name: Jump
-      from: 0
-      to: 3
+    - name: Idle
+      from: 36
+      to: 38
       fps: 12
       pivot: {x: 0.5, y: 0}
-    - name: Walk
-      from: 4
-      to: 7
+    - name: Run
+      from: 30
+      to: 35
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: JumpDown
+      from: 24
+      to: 27
       fps: 12
       pivot: {x: 0.5, y: 0}
     - name: Slide
-      from: 8
-      to: 11
+      from: 18
+      to: 19
       fps: 12
       pivot: {x: 0.5, y: 0}
-    - name: Fall
+    - name: SlideUp
       from: 12
-      to: 15
+      to: 14
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: JumpUP
+      from: 6
+      to: 9
+      fps: 12
+      pivot: {x: 0.5, y: 0}
+    - name: Hurra
+      from: 0
+      to: 2
       fps: 12
       pivot: {x: 0.5, y: 0}
   path: Assets/SpriteCutter/Packs

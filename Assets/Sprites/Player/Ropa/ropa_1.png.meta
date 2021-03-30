@@ -1,0 +1,1474 @@
+fileFormatVersion: 2
+guid: 118d05541c74d074cb8db6734610307d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8792074169267798285
+    second: testropa1_Jump_0
+  - first:
+      213: 8265973508464970614
+    second: testropa1_Jump_1
+  - first:
+      213: 2411787729942860093
+    second: testropa1_Jump_2
+  - first:
+      213: 8341275384686418500
+    second: testropa1_Jump_3
+  - first:
+      213: 7829729603155676280
+    second: testropa1_Walk_4
+  - first:
+      213: 2579871367544813427
+    second: testropa1_Walk_5
+  - first:
+      213: -973400013366561586
+    second: testropa1_Walk_6
+  - first:
+      213: 5215721236637920130
+    second: testropa1_Walk_7
+  - first:
+      213: 276107321707734678
+    second: testropa1_Slide_8
+  - first:
+      213: -1529990221593872963
+    second: testropa1_Slide_9
+  - first:
+      213: -8627273043367366820
+    second: testropa1_Slide_10
+  - first:
+      213: -7513930662974795761
+    second: testropa1_Slide_11
+  - first:
+      213: 946605449028281634
+    second: testropa1_Fall_12
+  - first:
+      213: -2205490890306483516
+    second: testropa1_Fall_13
+  - first:
+      213: 8832111241137133079
+    second: testropa1_Fall_14
+  - first:
+      213: -8167597264981144210
+    second: testropa1_Fall_15
+  - first:
+      213: -107984256928083220
+    second: testropa1__16
+  - first:
+      213: 6302241556364302273
+    second: testropa1__17
+  - first:
+      213: -3662635066518758533
+    second: testropa1__18
+  - first:
+      213: -620252284769970114
+    second: testropa1__19
+  - first:
+      213: -5292111984040696818
+    second: testropa1__20
+  - first:
+      213: 5924771330228122099
+    second: testropa1__21
+  - first:
+      213: -6685172021452410697
+    second: testropa1__22
+  - first:
+      213: 7261406030639019309
+    second: testropa1__23
+  - first:
+      213: -9177314949283175831
+    second: testropa1__24
+  - first:
+      213: 8857281398191221582
+    second: testropa1__25
+  - first:
+      213: -2192211768486478089
+    second: testropa1__26
+  - first:
+      213: -5329065744562841718
+    second: testropa1__27
+  - first:
+      213: 323462043498818676
+    second: testropa1__28
+  - first:
+      213: -6855798411127489970
+    second: testropa1__29
+  - first:
+      213: -4980541391530993009
+    second: testropa1__30
+  - first:
+      213: 8444982088151651934
+    second: testropa1__31
+  - first:
+      213: -8738840210190789375
+    second: testropa1__32
+  - first:
+      213: -3538202941178139585
+    second: testropa1__33
+  - first:
+      213: 3917651713285917302
+    second: testropa1__34
+  - first:
+      213: 4559528744319262946
+    second: testropa1__35
+  - first:
+      213: 8884467765894213416
+    second: testropa1__36
+  - first:
+      213: -1246546225752569006
+    second: testropa1__37
+  - first:
+      213: -668124551913864190
+    second: testropa1__38
+  - first:
+      213: -1892053188978219058
+    second: testropa1__39
+  - first:
+      213: -6438896923833451100
+    second: testropa1__40
+  - first:
+      213: 3221492028024921833
+    second: testropa1__41
+  - first:
+      213: 4204161933920310649
+    second: testropa1__42
+  - first:
+      213: 5285688691000086647
+    second: testropa1__43
+  - first:
+      213: -7989957948870496824
+    second: testropa1__44
+  - first:
+      213: 4505310926665012818
+    second: testropa1__45
+  - first:
+      213: -8140625716464251443
+    second: testropa1__46
+  - first:
+      213: -1819734442454800146
+    second: testropa1__47
+  - first:
+      213: 1001768402806907420
+    second: testropa1_Idle_0
+  - first:
+      213: -5160659243831408661
+    second: testropa1_Idle_1
+  - first:
+      213: 5165843029892531670
+    second: testropa1_Idle_2
+  - first:
+      213: 7004216420193798524
+    second: testropa1_Idle_3
+  - first:
+      213: 6512590508302037549
+    second: testropa1__4
+  - first:
+      213: 6361892732471354753
+    second: testropa1__5
+  - first:
+      213: -9043526132964559194
+    second: testropa1_Run_6
+  - first:
+      213: -4301318295980506938
+    second: testropa1_Run_7
+  - first:
+      213: -5662035345256541136
+    second: testropa1_Run_8
+  - first:
+      213: 2748430152314932925
+    second: testropa1_Run_9
+  - first:
+      213: -65327838237706504
+    second: testropa1_Run_10
+  - first:
+      213: 5671855879076505432
+    second: testropa1_Run_11
+  - first:
+      213: 5138164111969758853
+    second: testropa1_JumpDown_12
+  - first:
+      213: 4389363561271236782
+    second: testropa1_JumpDown_13
+  - first:
+      213: 3529448003804317278
+    second: testropa1_JumpDown_14
+  - first:
+      213: 5749977887957641793
+    second: testropa1_JumpDown_15
+  - first:
+      213: -4639159235465170893
+    second: testropa1_Slide_18
+  - first:
+      213: 2328294735205414967
+    second: testropa1_Slide_19
+  - first:
+      213: 4801991927020718118
+    second: testropa1_SlideUp_24
+  - first:
+      213: 953464525642032657
+    second: testropa1_SlideUp_25
+  - first:
+      213: 5081427344931672349
+    second: testropa1_SlideUp_26
+  - first:
+      213: -8593780483337494981
+    second: testropa1_JumpUP_30
+  - first:
+      213: -1836782087332243649
+    second: testropa1_JumpUP_31
+  - first:
+      213: -1511210703108445232
+    second: testropa1_JumpUP_32
+  - first:
+      213: -1692234307700553209
+    second: testropa1_JumpUP_33
+  - first:
+      213: 8815414693165521054
+    second: testropa1_Hurra_36
+  - first:
+      213: 5542231443428586882
+    second: testropa1_Hurra_37
+  - first:
+      213: 2339335831375150298
+    second: testropa1_Hurra_38
+  - first:
+      213: -2618254546028187742
+    second: testropa1__0
+  - first:
+      213: -9180768794114651946
+    second: testropa1__1
+  - first:
+      213: -4674486641614279773
+    second: testropa1__2
+  - first:
+      213: -7545734101208636602
+    second: testropa1__3
+  - first:
+      213: -810219204862885570
+    second: testropa1_Hurra_6
+  - first:
+      213: -5042365147630055686
+    second: testropa1_Hurra_7
+  - first:
+      213: 7094345554175362999
+    second: testropa1_Hurra_8
+  - first:
+      213: 3574425605155607112
+    second: testropa1__9
+  - first:
+      213: 6938509436011971889
+    second: testropa1__10
+  - first:
+      213: 4343514196216094734
+    second: testropa1__11
+  - first:
+      213: -1438605232726308704
+    second: testropa1_JumpUP_12
+  - first:
+      213: 6083047145732136931
+    second: testropa1_JumpUP_13
+  - first:
+      213: 8567567658966763304
+    second: testropa1_JumpUP_14
+  - first:
+      213: 1900217016957223619
+    second: testropa1_JumpUP_15
+  - first:
+      213: 8894901284297912553
+    second: testropa1_SlideUp_18
+  - first:
+      213: 8437450902737561425
+    second: testropa1_SlideUp_19
+  - first:
+      213: -7910622724646955491
+    second: testropa1_SlideUp_20
+  - first:
+      213: 2389022997921478031
+    second: testropa1_Slide_24
+  - first:
+      213: 4327482353104330334
+    second: testropa1_Slide_25
+  - first:
+      213: -8005038013483266628
+    second: testropa1_JumpDown_30
+  - first:
+      213: -4091600893464447346
+    second: testropa1_JumpDown_31
+  - first:
+      213: 6841706827047020254
+    second: testropa1_JumpDown_32
+  - first:
+      213: 5701062162516071005
+    second: testropa1_JumpDown_33
+  - first:
+      213: 8066625343826477890
+    second: testropa1_Run_36
+  - first:
+      213: -2887712196116010923
+    second: testropa1_Run_37
+  - first:
+      213: -1807060725384066706
+    second: testropa1_Run_38
+  - first:
+      213: -1939356021246020025
+    second: testropa1_Run_39
+  - first:
+      213: -6749635922419846522
+    second: testropa1_Run_40
+  - first:
+      213: 3530907403149526969
+    second: testropa1_Run_41
+  - first:
+      213: -2722928048761391759
+    second: testropa1_Idle_42
+  - first:
+      213: 7792340126857607169
+    second: testropa1_Idle_43
+  - first:
+      213: 5931604097216145720
+    second: testropa1_Idle_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: testropa1__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af207ccc571aabd0800000000000000
+      internalID: -2618254546028187742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d80ecd6c6b579080800000000000000
+      internalID: -9180768794114651946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aba54b7a23e02fb0800000000000000
+      internalID: -4674486641614279773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64368ef50da284790800000000000000
+      internalID: -7545734101208636602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__4
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d227ce6ef8e516a50800000000000000
+      internalID: 6512590508302037549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__5
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1852812cbbbf94850800000000000000
+      internalID: 6361892732471354753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Hurra_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31c2f70de581c4f0800000000000000
+      internalID: -810219204862885570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Hurra_7
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe43b32d9be50ab0800000000000000
+      internalID: -5042365147630055686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Hurra_8
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b78e7ea1bd247260800000000000000
+      internalID: 7094345554175362999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8425c575629ea9130800000000000000
+      internalID: 3574425605155607112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135803cf1998a4060800000000000000
+      internalID: 6938509436011971889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__11
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 87
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00a3560623474c30800000000000000
+      internalID: 4343514196216094734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpUP_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a88453b92c090ce0800000000000000
+      internalID: -1438605232726308704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpUP_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef515156235b6450800000000000000
+      internalID: 6083047145732136931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpUP_14
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827c6d5946d16e670800000000000000
+      internalID: 8567567658966763304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpUP_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c243e32f4dee5a10800000000000000
+      internalID: 1900217016957223619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__16
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce29774f3ec508ef0800000000000000
+      internalID: -107984256928083220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__17
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 174
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c79cc70e4f067750800000000000000
+      internalID: 6302241556364302273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_SlideUp_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e03eb24799017b70800000000000000
+      internalID: 8894901284297912553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_SlideUp_19
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157a87b74e8d71570800000000000000
+      internalID: 8437450902737561425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_SlideUp_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1619415b82d73290800000000000000
+      internalID: -7910622724646955491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__21
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f17aa15224093250800000000000000
+      internalID: 5924771330228122099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__22
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0f2fe477f7933a0800000000000000
+      internalID: -6685172021452410697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__23
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 261
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d253e12ff42b5c460800000000000000
+      internalID: 7261406030639019309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Slide_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85395f42c3872120800000000000000
+      internalID: 2389022997921478031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Slide_25
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e1e8ca54e4e0c30800000000000000
+      internalID: 4327482353104330334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__26
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7febeeae203b391e0800000000000000
+      internalID: -2192211768486478089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__27
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8711ae90fa5b06b0800000000000000
+      internalID: -5329065744562841718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ca119c30b2d7400800000000000000
+      internalID: 323462043498818676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__29
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 348
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4afe0d2baf4bd0a0800000000000000
+      internalID: -6855798411127489970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpDown_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdc4d8d65468e090800000000000000
+      internalID: -8005038013483266628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpDown_31
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8671666aa6b737c0800000000000000
+      internalID: -4091600893464447346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpDown_32
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6a08b3c10a2fe50800000000000000
+      internalID: 6841706827047020254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_JumpDown_33
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52d03fc4dd3e1f40800000000000000
+      internalID: 5701062162516071005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__34
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a8b140a7b4e5630800000000000000
+      internalID: 3917651713285917302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__35
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 435
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0255c4c33b64f30800000000000000
+      internalID: 4559528744319262946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243c0fae20962ff60800000000000000
+      internalID: 8066625343826477890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_37
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55821f0be09cce7d0800000000000000
+      internalID: -2887712196116010923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_38
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e694cef28d70ce6e0800000000000000
+      internalID: -1807060725384066706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_39
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746bd9c49f50615e0800000000000000
+      internalID: -1939356021246020025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_40
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682f2f0c3e97452a0800000000000000
+      internalID: -6749635922419846522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Run_41
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 522
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7468b539d400130800000000000000
+      internalID: 3530907403149526969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Idle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17531a8cd57363ad0800000000000000
+      internalID: -2722928048761391759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Idle_43
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108be5e4f04f32c60800000000000000
+      internalID: 7792340126857607169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1_Idle_44
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839e1dadf7a415250800000000000000
+      internalID: 5931604097216145720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__45
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256dd8aea64168e30800000000000000
+      internalID: 4505310926665012818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd0db0ba00b60f80800000000000000
+      internalID: -8140625716464251443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testropa1__47
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 609
+        width: 116
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee820fb7a210fb6e0800000000000000
+      internalID: -1819734442454800146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
