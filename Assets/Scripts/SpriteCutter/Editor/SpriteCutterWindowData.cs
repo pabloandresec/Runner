@@ -66,11 +66,11 @@ public class SpriteCutterWindowData : ScriptableObject
         TextureImporterSettings tISet = new TextureImporterSettings();
         ti.ReadTextureSettings(tISet);
         tISet.spriteAlignment = (int)SpriteAlignment.Custom;
-
+        tISet.spritePixelsPerUnit = Settings.Ppu;
 
         ti.isReadable = true;
-        ti.filterMode = FilterMode.Point;
-        ti.spritePixelsPerUnit = 32;
+        ti.filterMode = FilterMode.Bilinear;
+        ti.spritePixelsPerUnit = settings.Ppu;
         ti.spriteImportMode = SpriteImportMode.Multiple;
 
         List<SpriteMetaData> metasList = new List<SpriteMetaData>();

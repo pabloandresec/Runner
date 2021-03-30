@@ -4,7 +4,7 @@ using System;
 
 public class Pick : MonoBehaviour
 {
-    [SerializeField] private ItemData data;
+    [SerializeField] private AppearanceWrapper appearance;
     [Header("References")]
     [SerializeField] private Animator[] anim;
 
@@ -15,36 +15,8 @@ public class Pick : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            collision.GetComponent<CharacterAppearanceHandler>().SwapAppearance(appearance);
             Destroy(gameObject);
-        }
-    }
-
-    public void RefreshVisualData()
-    {
-        if(data != null)
-        {
-            return;
-        }
-        if(data.IconAnimControllers.Length > 0)
-        {
-            Transform t = GetRendererParentTransform();
-            CreateRendererAnimations(t);
-        }
-    }
-
-    private void CreateRendererAnimations(Transform t)
-    {
-        ClearChilds(t);
-        anim = new Animator[data.IconAnimControllers.Length];
-
-        for (int i = 0; i < data.IconAnimControllers.Length; i++)
-        {
-            GameObject currentLayer = new GameObject(data.Id + "_Layer_" + i);
-            currentLayer.transform.SetParent(t);
-            currentLayer.transform.localPosition = Vector3.zero;
-            SpriteRenderer csr = currentLayer.AddComponent<SpriteRenderer>();
-            Animator cAnim = currentLayer.AddComponent<Animator>();
-            cAnim.runtimeAnimatorController = data.IconAnimControllers[i];
         }
     }
 

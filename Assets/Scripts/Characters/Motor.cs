@@ -92,6 +92,8 @@ public class Motor : MonoBehaviour
             {
                 rb.AddForce(new Vector2(1, 1) * jumpForce);
             }
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -15, 20));
+            currentMotion.x = rb.velocity.x;
         }
     }
 
