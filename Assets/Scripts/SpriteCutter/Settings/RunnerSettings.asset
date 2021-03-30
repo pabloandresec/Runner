@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RunnerSettings
   m_EditorClassIdentifier: 
   settings:
-    packName: testropa1
-    spriteSheet: {fileID: 2800000, guid: 56bd04115d9f13347b3f5def4c519ea2, type: 3}
+    packName: pelotest
+    spriteSheet: {fileID: 2800000, guid: 49a6d56d3204ec64a930fd1d08bdd511, type: 3}
     columns: 6
     rows: 7
     ppu: 60

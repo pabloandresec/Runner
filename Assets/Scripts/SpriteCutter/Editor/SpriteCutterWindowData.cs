@@ -157,6 +157,7 @@ public class SpriteCutterWindowData : ScriptableObject
             AnimationClipSettings setting = AnimationUtility.GetAnimationClipSettings(ac);
             setting.loopTime = settings.Animations[i].loop;
 
+
             AnimationUtility.SetAnimationClipSettings(ac, setting);
             AnimationUtility.SetObjectReferenceCurve(ac, spriteBinding, spriteKeyFrames);
             AssetDatabase.CreateAsset(ac, animFolder + "/" + ac.name + ".anim");
