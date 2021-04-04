@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ropa_2b
+  m_Controller: {fileID: 9100000, guid: cb791e0bd91f9fd42bed4dc81f7ee055, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 430dfebc29556f64895c7deb6112eaec, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 22d694dba624fd94bbc0e721f1a27316, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 890e24cbce4172041a69034af10d2339, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 280d695e9749577439f15d2c97d24122, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3d5855108d9909d46884171d1ee9fab8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 05b003049b205e744854b8983dc11c88, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b87f8c8764fbe27419e00467b63251cb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7eca00b86594e1f45b30ea429acb3351, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2045b52e82ea2f243865b4e1416a22e0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 90b226f9527a20e45911f697d485e995, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 49306014138e8e444aa64cb11e1a4be5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 78b8ead026480a44896841ba865c020b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 71b77c509ffcfd44583bf7e71dec0eb6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cd5cef057b0375d4a9c43462e6d99351, type: 2}

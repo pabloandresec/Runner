@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class SpriteCutterWindowData : ScriptableObject
 {
     [SerializeField] private SpriteCutterSettings settings;
+    [SerializeField] private bool useOgTxtName = false;
     AnimationClipOverrides clipOverrides;
     [SerializeField] private string path = "Assets/Prefabs/Clothing";
 
@@ -23,8 +24,9 @@ public class SpriteCutterWindowData : ScriptableObject
 
     private void PopulateAnimator(AnimationClip[] clips)
     {
+        string usedName = useOgTxtName ? settings.SpriteSheet.name : settings.PackName;
         AnimatorOverrideController aoc = new AnimatorOverrideController(settings.BaseAnimatorController);
-        aoc.name = settings.PackName + "_AOC";
+        aoc.name = usedName + "_AOC";
         clipOverrides = new AnimationClipOverrides(aoc.overridesCount);
         aoc.GetOverrides(clipOverrides);
 
@@ -35,25 +37,9 @@ public class SpriteCutterWindowData : ScriptableObject
         }
 
         aoc.ApplyOverrides(clipOverrides);
-        AssetDatabase.CreateAsset(aoc, path + "/" + settings.PackName + "/Animations/" + settings.PackName + ".overrideController");
+        AssetDatabase.CreateAsset(aoc, path + "/" + usedName + "/Animations/" + usedName + ".overrideController");
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-    }
-
-    private void SaveSpritesToDisk(Sprite[] sprites)
-    {
-        if (string.IsNullOrEmpty(settings.PackName))
-        {
-            Debug.LogError("Error no se especifico el nombre del pack");
-            return;
-        }
-        if(!AssetDatabase.IsValidFolder(path))
-        {
-            Debug.LogError("Path doesnt exist");
-            return;
-        }
-        AssetDatabase.CreateFolder(path, settings.PackName);
-        AssetDatabase.CreateFolder(path + "/" + settings.PackName, "Animations");
     }
 
     public Sprite[] ExtractSprites(Texture2D texture, int cols, int rows)
@@ -111,6 +97,7 @@ public class SpriteCutterWindowData : ScriptableObject
 
     public AnimationClip[] CreateAnimations(Sprite[] sprites)
     {
+        string usedName = "";
         if (string.IsNullOrEmpty(settings.PackName))
         {
             Debug.LogError("Error no se especifico el nombre del pack");
@@ -121,8 +108,16 @@ public class SpriteCutterWindowData : ScriptableObject
             Debug.LogError("Path doesnt exist");
             return null;
         }
-        AssetDatabase.CreateFolder(path, settings.PackName);
-        string rootFolder = path + "/" + settings.PackName;
+        usedName = useOgTxtName ? settings.SpriteSheet.name : settings.PackName;
+
+        bool folderExists = AssetDatabase.IsValidFolder(path + "/" + usedName);
+        if(folderExists)
+        {
+            AssetDatabase.DeleteAsset(path + "/" + usedName);
+        }
+
+        AssetDatabase.CreateFolder(path, usedName);
+        string rootFolder = path + "/" + usedName;
         AssetDatabase.CreateFolder(rootFolder, "Animations");
         string animFolder = rootFolder + "/Animations";
 

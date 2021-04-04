@@ -19,6 +19,7 @@ public class Motor : MonoBehaviour
     [SerializeField] private MotionMode motionMode = MotionMode.ACCELERATION;
     [SerializeField] private float acceleration = 5;
     [SerializeField] private float maxSpeed = 5;
+    [SerializeField] private float minSlideSpeed = 1;
     [SerializeField] private float jumpForce = 6;
     [Tooltip("Solo valido en motion INSTANTANEOUS")]
     [SerializeField] private float slideSpeed = 5;
@@ -35,7 +36,9 @@ public class Motor : MonoBehaviour
     public bool SlideState { get => slideState; }
     public bool IsGrounded { get => isGrounded; }
 
+    public bool colliding = false;
     public Vector2 direction = Vector2.zero;
+    public Vector2 auxDir = Vector2.zero;
     public Vector2 rbVelocity = Vector2.zero;
 
     private void Update()
@@ -57,6 +60,9 @@ public class Motor : MonoBehaviour
             case MotionMode.INSTANTANEOUS:
                 MoveInstantaneous(slide);
                 break;
+            case MotionMode.EXPERIMENTAL:
+                MoveAccelerationExp(slide);
+                break;
         }
     }
 
@@ -70,12 +76,12 @@ public class Motor : MonoBehaviour
             }
             if (slide)
             {
-                currentMotion += new Vector2(-1, 0) * acceleration * Time.fixedDeltaTime;
-                currentMotion = new Vector2(Mathf.Clamp(currentMotion.x, 0, maxSpeed), currentMotion.y);
+                currentMotion += -Vector2.right * acceleration * Time.fixedDeltaTime;
+                currentMotion = new Vector2(Mathf.Clamp(currentMotion.x, minSlideSpeed, maxSpeed), currentMotion.y);
             }
             else if (!bottomWallSensor)
             {
-                currentMotion += new Vector2(1, 0) * acceleration * Time.fixedDeltaTime;
+                currentMotion += Vector2.right * acceleration * Time.fixedDeltaTime;
                 currentMotion = Vector2.ClampMagnitude(currentMotion, maxSpeed);
             }
             else
@@ -89,6 +95,43 @@ public class Motor : MonoBehaviour
         else
         {
             if(!bottomWallSensor && !topWallSensor && rb.velocity.x < maxSpeed * 0.3f)
+            {
+                rb.AddForce(new Vector2(1, 1) * jumpForce);
+            }
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -15, 20));
+            currentMotion.x = rb.velocity.x;
+        }
+    }
+
+    private void MoveAccelerationExp(bool slide)
+    {
+        if (IsGrounded && colliding)
+        {
+            if (getUpLocked)
+            {
+                slide = true;
+            }
+            if (slide)
+            {
+                currentMotion += -direction * acceleration * Time.fixedDeltaTime;
+                currentMotion = new Vector2(Mathf.Clamp(currentMotion.x, minSlideSpeed, maxSpeed), currentMotion.y);
+            }
+            else if (!bottomWallSensor)
+            {
+                currentMotion += direction * acceleration * Time.fixedDeltaTime;
+                currentMotion = Vector2.ClampMagnitude(currentMotion, maxSpeed);
+            }
+            else
+            {
+                currentMotion = new Vector2(0, 0);
+            }
+            DisableTopCollider(slide);
+            slideState = slide;
+            rb.velocity = currentMotion;
+        }
+        else
+        {
+            if (!bottomWallSensor && !topWallSensor && rb.velocity.x < maxSpeed * 0.3f)
             {
                 rb.AddForce(new Vector2(1, 1) * jumpForce);
             }
@@ -137,6 +180,28 @@ public class Motor : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        colliding = true;
+
+        if (isGrounded && colliding)
+        {
+            direction = -Vector2.Perpendicular(collision.GetContact(0).normal).normalized;
+            if(direction.y < 0)
+            {
+                direction.y = 0;
+            }
+        }
+        else
+        {
+            direction = Vector2.zero;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        colliding = false;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = isGrounded ? Color.red : Color.white;
@@ -152,5 +217,6 @@ public class Motor : MonoBehaviour
 public enum MotionMode
 {
     ACCELERATION,
-    INSTANTANEOUS
+    INSTANTANEOUS,
+    EXPERIMENTAL
 }

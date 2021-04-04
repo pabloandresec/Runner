@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 118d05541c74d074cb8db6734610307d
+guid: 56bd04115d9f13347b3f5def4c519ea2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8792074169267798285
-    second: testropa1_Jump_0
+      213: -6484956161385714845
+    second: testropa1_Hurra_0
   - first:
-      213: 8265973508464970614
-    second: testropa1_Jump_1
+      213: 4831927159808460300
+    second: testropa1_Hurra_1
   - first:
-      213: 2411787729942860093
-    second: testropa1_Jump_2
+      213: -829665234169514296
+    second: testropa1_Hurra_2
   - first:
-      213: 8341275384686418500
-    second: testropa1_Jump_3
+      213: -7545734101208636602
+    second: testropa1__3
   - first:
-      213: 7829729603155676280
-    second: testropa1_Walk_4
+      213: 6512590508302037549
+    second: testropa1__4
   - first:
-      213: 2579871367544813427
-    second: testropa1_Walk_5
+      213: 6361892732471354753
+    second: testropa1__5
   - first:
-      213: -973400013366561586
-    second: testropa1_Walk_6
+      213: -7332953423029440857
+    second: testropa1_JumpUP_6
   - first:
-      213: 5215721236637920130
-    second: testropa1_Walk_7
+      213: 6929219429232779684
+    second: testropa1_JumpUP_7
   - first:
-      213: 276107321707734678
-    second: testropa1_Slide_8
+      213: -575529969446509349
+    second: testropa1_JumpUP_8
   - first:
-      213: -1529990221593872963
-    second: testropa1_Slide_9
+      213: -5391133429729587011
+    second: testropa1_JumpUP_9
   - first:
-      213: -8627273043367366820
-    second: testropa1_Slide_10
+      213: 6938509436011971889
+    second: testropa1__10
   - first:
-      213: -7513930662974795761
-    second: testropa1_Slide_11
+      213: 4343514196216094734
+    second: testropa1__11
   - first:
-      213: 946605449028281634
-    second: testropa1_Fall_12
+      213: 3338776128678314430
+    second: testropa1_SlideUp_12
   - first:
-      213: -2205490890306483516
-    second: testropa1_Fall_13
+      213: 5313420109661798784
+    second: testropa1_SlideUp_13
   - first:
-      213: 8832111241137133079
-    second: testropa1_Fall_14
+      213: -2430014067736342962
+    second: testropa1_SlideUp_14
   - first:
-      213: -8167597264981144210
-    second: testropa1_Fall_15
+      213: -329246099793361633
+    second: testropa1__15
   - first:
       213: -107984256928083220
     second: testropa1__16
@@ -57,11 +57,11 @@ TextureImporter:
       213: 6302241556364302273
     second: testropa1__17
   - first:
-      213: -3662635066518758533
-    second: testropa1__18
+      213: -4639159235465170893
+    second: testropa1_Slide_18
   - first:
-      213: -620252284769970114
-    second: testropa1__19
+      213: 2328294735205414967
+    second: testropa1_Slide_19
   - first:
       213: -5292111984040696818
     second: testropa1__20
@@ -75,17 +75,17 @@ TextureImporter:
       213: 7261406030639019309
     second: testropa1__23
   - first:
-      213: -9177314949283175831
-    second: testropa1__24
+      213: 3191425095595708116
+    second: testropa1_JumpDown_24
   - first:
-      213: 8857281398191221582
-    second: testropa1__25
+      213: -121448624682637092
+    second: testropa1_JumpDown_25
   - first:
-      213: -2192211768486478089
-    second: testropa1__26
+      213: -7660086506790877608
+    second: testropa1_JumpDown_26
   - first:
-      213: -5329065744562841718
-    second: testropa1__27
+      213: 1562878801152797951
+    second: testropa1_JumpDown_27
   - first:
       213: 323462043498818676
     second: testropa1__28
@@ -93,32 +93,32 @@ TextureImporter:
       213: -6855798411127489970
     second: testropa1__29
   - first:
-      213: -4980541391530993009
-    second: testropa1__30
+      213: 5555488526492797749
+    second: testropa1_Run_30
   - first:
-      213: 8444982088151651934
-    second: testropa1__31
+      213: 304403054630965709
+    second: testropa1_Run_31
   - first:
-      213: -8738840210190789375
-    second: testropa1__32
+      213: 4401997793240231696
+    second: testropa1_Run_32
   - first:
-      213: -3538202941178139585
-    second: testropa1__33
+      213: 2634223033372210650
+    second: testropa1_Run_33
   - first:
-      213: 3917651713285917302
-    second: testropa1__34
+      213: -1783369619286601643
+    second: testropa1_Run_34
   - first:
-      213: 4559528744319262946
-    second: testropa1__35
+      213: 7314749985331651952
+    second: testropa1_Run_35
   - first:
-      213: 8884467765894213416
-    second: testropa1__36
+      213: -3107827046401165715
+    second: testropa1_Idle_36
   - first:
-      213: -1246546225752569006
-    second: testropa1__37
+      213: 7871725781165454084
+    second: testropa1_Idle_37
   - first:
-      213: -668124551913864190
-    second: testropa1__38
+      213: -7910961108705136774
+    second: testropa1_Idle_38
   - first:
       213: -1892053188978219058
     second: testropa1__39
@@ -147,185 +147,257 @@ TextureImporter:
       213: -1819734442454800146
     second: testropa1__47
   - first:
-      213: 1001768402806907420
-    second: testropa1_Idle_0
+      213: 6540682285320882432
+    second: testropa0_Hurra_0
   - first:
-      213: -5160659243831408661
-    second: testropa1_Idle_1
+      213: -4454212836430691171
+    second: testropa0_Hurra_1
   - first:
-      213: 5165843029892531670
-    second: testropa1_Idle_2
+      213: 2949550913105020175
+    second: testropa0_Hurra_2
   - first:
-      213: 7004216420193798524
-    second: testropa1_Idle_3
+      213: 1463890795455294969
+    second: testropa0__3
   - first:
-      213: 6512590508302037549
-    second: testropa1__4
+      213: 1082077514519463876
+    second: testropa0__4
   - first:
-      213: 6361892732471354753
-    second: testropa1__5
+      213: -3619129773729923804
+    second: testropa0__5
   - first:
-      213: -9043526132964559194
-    second: testropa1_Run_6
+      213: -4113772331377193090
+    second: testropa0_JumpUP_6
   - first:
-      213: -4301318295980506938
-    second: testropa1_Run_7
+      213: -2286513590078637372
+    second: testropa0_JumpUP_7
   - first:
-      213: -5662035345256541136
-    second: testropa1_Run_8
+      213: -8437796213919235542
+    second: testropa0_JumpUP_8
   - first:
-      213: 2748430152314932925
-    second: testropa1_Run_9
+      213: -4057060030362974584
+    second: testropa0_JumpUP_9
   - first:
-      213: -65327838237706504
-    second: testropa1_Run_10
+      213: 890863643088384110
+    second: testropa0__10
   - first:
-      213: 5671855879076505432
-    second: testropa1_Run_11
+      213: -4111865856274706349
+    second: testropa0__11
   - first:
-      213: 5138164111969758853
-    second: testropa1_JumpDown_12
+      213: -3555518021368819014
+    second: testropa0_SlideUp_12
   - first:
-      213: 4389363561271236782
-    second: testropa1_JumpDown_13
+      213: 7080203824541104514
+    second: testropa0_SlideUp_13
   - first:
-      213: 3529448003804317278
-    second: testropa1_JumpDown_14
+      213: 2353972483151188101
+    second: testropa0_SlideUp_14
   - first:
-      213: 5749977887957641793
-    second: testropa1_JumpDown_15
+      213: -2665736042264398417
+    second: testropa0__15
   - first:
-      213: -4639159235465170893
-    second: testropa1_Slide_18
+      213: 6138737718567462735
+    second: testropa0__16
   - first:
-      213: 2328294735205414967
-    second: testropa1_Slide_19
+      213: 850571215583778073
+    second: testropa0__17
   - first:
-      213: 4801991927020718118
-    second: testropa1_SlideUp_24
+      213: 3760519725955669669
+    second: testropa0_Slide_18
   - first:
-      213: 953464525642032657
-    second: testropa1_SlideUp_25
+      213: 7035360503398359751
+    second: testropa0_Slide_19
   - first:
-      213: 5081427344931672349
-    second: testropa1_SlideUp_26
+      213: -3505917437213884856
+    second: testropa0__20
   - first:
-      213: -8593780483337494981
-    second: testropa1_JumpUP_30
+      213: -9084100190637752184
+    second: testropa0__21
   - first:
-      213: -1836782087332243649
-    second: testropa1_JumpUP_31
+      213: 3336637780084416663
+    second: testropa0__22
   - first:
-      213: -1511210703108445232
-    second: testropa1_JumpUP_32
+      213: 1152976489759990503
+    second: testropa0__23
   - first:
-      213: -1692234307700553209
-    second: testropa1_JumpUP_33
+      213: -3658458990684739949
+    second: testropa0_JumpDown_24
   - first:
-      213: 8815414693165521054
-    second: testropa1_Hurra_36
+      213: 6356144594153934106
+    second: testropa0_JumpDown_25
   - first:
-      213: 5542231443428586882
-    second: testropa1_Hurra_37
+      213: -4993785140718029665
+    second: testropa0_JumpDown_26
   - first:
-      213: 2339335831375150298
-    second: testropa1_Hurra_38
+      213: -7447444291864571175
+    second: testropa0_JumpDown_27
   - first:
-      213: -2618254546028187742
-    second: testropa1__0
+      213: 6986641637364238671
+    second: testropa0__28
   - first:
-      213: -9180768794114651946
-    second: testropa1__1
+      213: -2111626656910021766
+    second: testropa0__29
   - first:
-      213: -4674486641614279773
-    second: testropa1__2
+      213: 1528763315957437028
+    second: testropa0_Run_30
   - first:
-      213: -7545734101208636602
-    second: testropa1__3
+      213: -7590880110902853504
+    second: testropa0_Run_31
   - first:
-      213: -810219204862885570
-    second: testropa1_Hurra_6
+      213: 4235775800087185929
+    second: testropa0_Run_32
   - first:
-      213: -5042365147630055686
-    second: testropa1_Hurra_7
+      213: -1773435261801690560
+    second: testropa0_Run_33
   - first:
-      213: 7094345554175362999
-    second: testropa1_Hurra_8
+      213: 1534232534851990860
+    second: testropa0_Run_34
   - first:
-      213: 3574425605155607112
-    second: testropa1__9
+      213: -8595180614426220516
+    second: testropa0_Run_35
   - first:
-      213: 6938509436011971889
-    second: testropa1__10
+      213: -2875832967544343407
+    second: testropa0_Idle_36
   - first:
-      213: 4343514196216094734
-    second: testropa1__11
+      213: 4453401442448333740
+    second: testropa0_Idle_37
   - first:
-      213: -1438605232726308704
-    second: testropa1_JumpUP_12
+      213: 7981024194589549864
+    second: testropa0_Idle_38
   - first:
-      213: 6083047145732136931
-    second: testropa1_JumpUP_13
+      213: 6686001477768036081
+    second: testropa0__39
   - first:
-      213: 8567567658966763304
-    second: testropa1_JumpUP_14
+      213: 2861795810859723050
+    second: testropa0__40
   - first:
-      213: 1900217016957223619
-    second: testropa1_JumpUP_15
+      213: 8678751873745579667
+    second: testropa0__41
   - first:
-      213: 8894901284297912553
-    second: testropa1_SlideUp_18
+      213: -5027509340213622084
+    second: 0
   - first:
-      213: 8437450902737561425
-    second: testropa1_SlideUp_19
+      213: -2374222918679686493
+    second: 1
   - first:
-      213: -7910622724646955491
-    second: testropa1_SlideUp_20
+      213: -761933863725385812
+    second: 2
   - first:
-      213: 2389022997921478031
-    second: testropa1_Slide_24
+      213: -5906598218874874896
+    second: 3
   - first:
-      213: 4327482353104330334
-    second: testropa1_Slide_25
+      213: -1816755548282093316
+    second: 4
   - first:
-      213: -8005038013483266628
-    second: testropa1_JumpDown_30
+      213: 2008176328888099268
+    second: 5
   - first:
-      213: -4091600893464447346
-    second: testropa1_JumpDown_31
+      213: 6967745887157389618
+    second: 6
   - first:
-      213: 6841706827047020254
-    second: testropa1_JumpDown_32
+      213: 6501298950303736333
+    second: 7
   - first:
-      213: 5701062162516071005
-    second: testropa1_JumpDown_33
+      213: -3181606171480048652
+    second: 8
   - first:
-      213: 8066625343826477890
-    second: testropa1_Run_36
+      213: -7010260848350730462
+    second: 9
   - first:
-      213: -2887712196116010923
-    second: testropa1_Run_37
+      213: -8655818156195654838
+    second: 10
   - first:
-      213: -1807060725384066706
-    second: testropa1_Run_38
+      213: 6346318911325233748
+    second: 11
   - first:
-      213: -1939356021246020025
-    second: testropa1_Run_39
+      213: 1840059084634729652
+    second: 12
   - first:
-      213: -6749635922419846522
-    second: testropa1_Run_40
+      213: 1127223760459724062
+    second: 13
   - first:
-      213: 3530907403149526969
-    second: testropa1_Run_41
+      213: 2450565909728410856
+    second: 14
   - first:
-      213: -2722928048761391759
-    second: testropa1_Idle_42
+      213: -3165705482850905674
+    second: 15
   - first:
-      213: 7792340126857607169
-    second: testropa1_Idle_43
+      213: -5774996654182199871
+    second: 16
   - first:
-      213: 5931604097216145720
-    second: testropa1_Idle_44
+      213: 4443897450750874535
+    second: 17
+  - first:
+      213: 5661049957185019681
+    second: 18
+  - first:
+      213: 8474981341611232960
+    second: 19
+  - first:
+      213: 6836142153017594085
+    second: 20
+  - first:
+      213: 2185498278340178504
+    second: 21
+  - first:
+      213: 430984766625829748
+    second: 22
+  - first:
+      213: -1317986280940093683
+    second: 23
+  - first:
+      213: -8326724806951850010
+    second: 24
+  - first:
+      213: 8914089594741642868
+    second: 25
+  - first:
+      213: 276181914589855336
+    second: 26
+  - first:
+      213: 588497054336764479
+    second: 27
+  - first:
+      213: -540048619370252142
+    second: 28
+  - first:
+      213: -3511060238418154924
+    second: 29
+  - first:
+      213: -6691012767228139306
+    second: 30
+  - first:
+      213: 8251907811329543855
+    second: 31
+  - first:
+      213: -8946788012438720712
+    second: 32
+  - first:
+      213: -3538851436377425636
+    second: 33
+  - first:
+      213: 5837620518785745679
+    second: 34
+  - first:
+      213: 735763825654373507
+    second: 35
+  - first:
+      213: -6766607325196344940
+    second: 36
+  - first:
+      213: 7123294266852565953
+    second: 37
+  - first:
+      213: 1812952166184403864
+    second: 38
+  - first:
+      213: 765628930423093814
+    second: 39
+  - first:
+      213: 3140112598110723769
+    second: 40
+  - first:
+      213: -1761356356439173420
+    second: 41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -370,7 +442,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 9
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -449,13 +521,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: testropa1__0
+      name: 0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,20 +535,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2af207ccc571aabd0800000000000000
-      internalID: -2618254546028187742
+      spriteID: cbacb9754e2ba3ab0800000000000000
+      internalID: -5027509340213622084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__1
+      name: 1
       rect:
         serializedVersion: 2
         x: 116
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,20 +556,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d80ecd6c6b579080800000000000000
-      internalID: -9180768794114651946
+      spriteID: 3a2918aa5d01d0fd0800000000000000
+      internalID: -2374222918679686493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__2
+      name: 2
       rect:
         serializedVersion: 2
         x: 232
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,20 +577,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3aba54b7a23e02fb0800000000000000
-      internalID: -4674486641614279773
+      spriteID: ca7be4610311d65f0800000000000000
+      internalID: -761933863725385812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__3
+      name: 3
       rect:
         serializedVersion: 2
         x: 348
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,20 +598,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64368ef50da284790800000000000000
-      internalID: -7545734101208636602
+      spriteID: 0f31205e63c870ea0800000000000000
+      internalID: -5906598218874874896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__4
+      name: 4
       rect:
         serializedVersion: 2
         x: 464
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,20 +619,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d227ce6ef8e516a50800000000000000
-      internalID: 6512590508302037549
+      spriteID: cf00de4547699c6e0800000000000000
+      internalID: -1816755548282093316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__5
+      name: 5
       rect:
         serializedVersion: 2
         x: 580
         y: 0
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,20 +640,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1852812cbbbf94850800000000000000
-      internalID: 6361892732471354753
+      spriteID: 4c129b93bb97edb10800000000000000
+      internalID: 2008176328888099268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Hurra_6
+      name: 6
       rect:
         serializedVersion: 2
         x: 0
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,20 +661,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e31c2f70de581c4f0800000000000000
-      internalID: -810219204862885570
+      spriteID: 2398439b7f762b060800000000000000
+      internalID: 6967745887157389618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Hurra_7
+      name: 7
       rect:
         serializedVersion: 2
         x: 116
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,20 +682,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afe43b32d9be50ab0800000000000000
-      internalID: -5042365147630055686
+      spriteID: d02697f23f0493a50800000000000000
+      internalID: 6501298950303736333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Hurra_8
+      name: 8
       rect:
         serializedVersion: 2
         x: 232
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,20 +703,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b78e7ea1bd247260800000000000000
-      internalID: 7094345554175362999
+      spriteID: 4fbbdbd3b0aa8d3d0800000000000000
+      internalID: -3181606171480048652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__9
+      name: 9
       rect:
         serializedVersion: 2
         x: 348
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,20 +724,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8425c575629ea9130800000000000000
-      internalID: 3574425605155607112
+      spriteID: 227e93f76ec86be90800000000000000
+      internalID: -7010260848350730462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__10
+      name: 10
       rect:
         serializedVersion: 2
         x: 464
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,20 +745,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 135803cf1998a4060800000000000000
-      internalID: 6938509436011971889
+      spriteID: a43d4975f3b50e780800000000000000
+      internalID: -8655818156195654838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__11
+      name: 11
       rect:
         serializedVersion: 2
         x: 580
-        y: 87
+        y: 88
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,20 +766,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e00a3560623474c30800000000000000
-      internalID: 4343514196216094734
+      spriteID: 45262e4fc67a21850800000000000000
+      internalID: 6346318911325233748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpUP_12
+      name: 12
       rect:
         serializedVersion: 2
         x: 0
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -715,20 +787,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a88453b92c090ce0800000000000000
-      internalID: -1438605232726308704
+      spriteID: 4bc22690df3398910800000000000000
+      internalID: 1840059084634729652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpUP_13
+      name: 13
       rect:
         serializedVersion: 2
         x: 116
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,20 +808,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ef515156235b6450800000000000000
-      internalID: 6083047145732136931
+      spriteID: e15f490b904b4af00800000000000000
+      internalID: 1127223760459724062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpUP_14
+      name: 14
       rect:
         serializedVersion: 2
         x: 232
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,20 +829,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 827c6d5946d16e670800000000000000
-      internalID: 8567567658966763304
+      spriteID: 8ec3b0416b8220220800000000000000
+      internalID: 2450565909728410856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpUP_15
+      name: 15
       rect:
         serializedVersion: 2
         x: 348
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,20 +850,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c243e32f4dee5a10800000000000000
-      internalID: 1900217016957223619
+      spriteID: 6b15a2fc2a72114d0800000000000000
+      internalID: -3165705482850905674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__16
+      name: 16
       rect:
         serializedVersion: 2
         x: 464
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -799,20 +871,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce29774f3ec508ef0800000000000000
-      internalID: -107984256928083220
+      spriteID: 1cd8668e3271bdfa0800000000000000
+      internalID: -5774996654182199871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__17
+      name: 17
       rect:
         serializedVersion: 2
         x: 580
-        y: 174
+        y: 176
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -820,20 +892,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c79cc70e4f067750800000000000000
-      internalID: 6302241556364302273
+      spriteID: 7a3154acf25ebad30800000000000000
+      internalID: 4443897450750874535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_SlideUp_18
+      name: 18
       rect:
         serializedVersion: 2
         x: 0
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,20 +913,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e03eb24799017b70800000000000000
-      internalID: 8894901284297912553
+      spriteID: 12fd0c941f6109e40800000000000000
+      internalID: 5661049957185019681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_SlideUp_19
+      name: 19
       rect:
         serializedVersion: 2
         x: 116
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -862,20 +934,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 157a87b74e8d71570800000000000000
-      internalID: 8437450902737561425
+      spriteID: 0ce0dc8b0ae2d9570800000000000000
+      internalID: 8474981341611232960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_SlideUp_20
+      name: 20
       rect:
         serializedVersion: 2
         x: 232
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -883,20 +955,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1619415b82d73290800000000000000
-      internalID: -7910622724646955491
+      spriteID: 5e010b8911bdede50800000000000000
+      internalID: 6836142153017594085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__21
+      name: 21
       rect:
         serializedVersion: 2
         x: 348
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,20 +976,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f17aa15224093250800000000000000
-      internalID: 5924771330228122099
+      spriteID: 842b1b9da13745e10800000000000000
+      internalID: 2185498278340178504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__22
+      name: 22
       rect:
         serializedVersion: 2
         x: 464
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -925,20 +997,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b0f2fe477f7933a0800000000000000
-      internalID: -6685172021452410697
+      spriteID: 473565e9c5a2bf500800000000000000
+      internalID: 430984766625829748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__23
+      name: 23
       rect:
         serializedVersion: 2
         x: 580
-        y: 261
+        y: 264
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,20 +1018,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d253e12ff42b5c460800000000000000
-      internalID: 7261406030639019309
+      spriteID: d0f3ab1e57295bde0800000000000000
+      internalID: -1317986280940093683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Slide_24
+      name: 24
       rect:
         serializedVersion: 2
         x: 0
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,20 +1039,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f85395f42c3872120800000000000000
-      internalID: 2389022997921478031
+      spriteID: 6efa33ba7e7817c80800000000000000
+      internalID: -8326724806951850010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Slide_25
+      name: 25
       rect:
         serializedVersion: 2
         x: 116
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -988,20 +1060,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5e1e8ca54e4e0c30800000000000000
-      internalID: 4327482353104330334
+      spriteID: 476d49ee14535bb70800000000000000
+      internalID: 8914089594741642868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__26
+      name: 26
       rect:
         serializedVersion: 2
         x: 232
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1009,20 +1081,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7febeeae203b391e0800000000000000
-      internalID: -2192211768486478089
+      spriteID: 86ef380fcf135d300800000000000000
+      internalID: 276181914589855336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__27
+      name: 27
       rect:
         serializedVersion: 2
         x: 348
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1030,20 +1102,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8711ae90fa5b06b0800000000000000
-      internalID: -5329065744562841718
+      spriteID: f3a4b13f3f2ca2800800000000000000
+      internalID: 588497054336764479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__28
+      name: 28
       rect:
         serializedVersion: 2
         x: 464
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1051,20 +1123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47ca119c30b2d7400800000000000000
-      internalID: 323462043498818676
+      spriteID: 298fef854ac5188f0800000000000000
+      internalID: -540048619370252142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__29
+      name: 29
       rect:
         serializedVersion: 2
         x: 580
-        y: 348
+        y: 352
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1072,20 +1144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4afe0d2baf4bd0a0800000000000000
-      internalID: -6855798411127489970
+      spriteID: 45a6618c055364fc0800000000000000
+      internalID: -3511060238418154924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpDown_30
+      name: 30
       rect:
         serializedVersion: 2
         x: 0
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1093,20 +1165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbdc4d8d65468e090800000000000000
-      internalID: -8005038013483266628
+      spriteID: 6d863c5b65fb423a0800000000000000
+      internalID: -6691012767228139306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpDown_31
+      name: 31
       rect:
         serializedVersion: 2
         x: 116
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1114,20 +1186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8671666aa6b737c0800000000000000
-      internalID: -4091600893464447346
+      spriteID: fae81951f6aa48270800000000000000
+      internalID: 8251907811329543855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpDown_32
+      name: 32
       rect:
         serializedVersion: 2
         x: 232
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1135,20 +1207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed6a08b3c10a2fe50800000000000000
-      internalID: 6841706827047020254
+      spriteID: 83feddd64bf96d380800000000000000
+      internalID: -8946788012438720712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_JumpDown_33
+      name: 33
       rect:
         serializedVersion: 2
         x: 348
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1156,20 +1228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d52d03fc4dd3e1f40800000000000000
-      internalID: 5701062162516071005
+      spriteID: c19b7d54e5973eec0800000000000000
+      internalID: -3538851436377425636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__34
+      name: 34
       rect:
         serializedVersion: 2
         x: 464
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1177,20 +1249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67a8b140a7b4e5630800000000000000
-      internalID: 3917651713285917302
+      spriteID: f0381cbcee4630150800000000000000
+      internalID: 5837620518785745679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1__35
+      name: 35
       rect:
         serializedVersion: 2
         x: 580
-        y: 435
+        y: 440
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,20 +1270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e0255c4c33b64f30800000000000000
-      internalID: 4559528744319262946
+      spriteID: 38c16ba1d45f53a00800000000000000
+      internalID: 735763825654373507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_36
+      name: 36
       rect:
         serializedVersion: 2
         x: 0
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,20 +1291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 243c0fae20962ff60800000000000000
-      internalID: 8066625343826477890
+      spriteID: 491ad1f1d7e2812a0800000000000000
+      internalID: -6766607325196344940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_37
+      name: 37
       rect:
         serializedVersion: 2
         x: 116
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1240,20 +1312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55821f0be09cce7d0800000000000000
-      internalID: -2887712196116010923
+      spriteID: 1c3e25615660bd260800000000000000
+      internalID: 7123294266852565953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_38
+      name: 38
       rect:
         serializedVersion: 2
         x: 232
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1261,20 +1333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e694cef28d70ce6e0800000000000000
-      internalID: -1807060725384066706
+      spriteID: 8934234c366e82910800000000000000
+      internalID: 1812952166184403864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_39
+      name: 39
       rect:
         serializedVersion: 2
         x: 348
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1282,20 +1354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 746bd9c49f50615e0800000000000000
-      internalID: -1939356021246020025
+      spriteID: 63a71aba47f00aa00800000000000000
+      internalID: 765628930423093814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_40
+      name: 40
       rect:
         serializedVersion: 2
         x: 464
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1303,20 +1375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 682f2f0c3e97452a0800000000000000
-      internalID: -6749635922419846522
+      spriteID: 9be5e1d55cbe39b20800000000000000
+      internalID: 3140112598110723769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: testropa1_Run_41
+      name: 41
       rect:
         serializedVersion: 2
         x: 580
-        y: 522
+        y: 528
         width: 116
-        height: 87
+        height: 88
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1324,134 +1396,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b7468b539d400130800000000000000
-      internalID: 3530907403149526969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1_Idle_42
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17531a8cd57363ad0800000000000000
-      internalID: -2722928048761391759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1_Idle_43
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 108be5e4f04f32c60800000000000000
-      internalID: 7792340126857607169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1_Idle_44
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 839e1dadf7a415250800000000000000
-      internalID: 5931604097216145720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1__45
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 256dd8aea64168e30800000000000000
-      internalID: 4505310926665012818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1__46
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcd0db0ba00b60f80800000000000000
-      internalID: -8140625716464251443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: testropa1__47
-      rect:
-        serializedVersion: 2
-        x: 580
-        y: 609
-        width: 116
-        height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee820fb7a210fb6e0800000000000000
-      internalID: -1819734442454800146
+      spriteID: 4d61193d9b76e87e0800000000000000
+      internalID: -1761356356439173420
       vertices: []
       indices: 
       edges: []

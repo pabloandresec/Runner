@@ -8,13 +8,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] mainMenus;
+    [SerializeField] protected GameObject[] mainMenus;
     [Range(0,4)]
-    [SerializeField] private int fadeDirection = 0;
-    [SerializeField] private float fadeTime = 0.2f;
+    [SerializeField] protected int fadeDirection = 0;
+    [SerializeField] protected float fadeTime = 0.2f;
     private Dictionary<string, Vector2> menuPositions;
-    private bool swapingMenus;
-    [SerializeField] private Image blackOverlay;
+    protected bool swapingMenus;
+    [SerializeField] protected Image blackOverlay;
 
 
     private void Start()
@@ -98,7 +98,7 @@ public class MenuController : MonoBehaviour
     /// <param name="direction"></param>
     public void SetFadeDirection(int direction)
     {
-        fadeDirection = Mathf.Clamp(direction,0,5);
+        fadeDirection = Mathf.Clamp(direction, 0, 5);
         Debug.Log("Direction");
     }
 
