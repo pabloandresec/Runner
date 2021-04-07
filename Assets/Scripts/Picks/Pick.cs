@@ -7,6 +7,8 @@ public class Pick : MonoBehaviour
     [SerializeField] private AppearanceWrapper appearance;
     [Header("References")]
     [SerializeField] private Animator[] anim;
+    [Header("Sound index")]
+    [SerializeField] private int onPickSoundIndex = 2;
 
 
 
@@ -16,6 +18,7 @@ public class Pick : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             collision.GetComponent<CharacterAppearanceHandler>().SwapAppearance(appearance);
+            GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
             Destroy(gameObject);
         }
     }

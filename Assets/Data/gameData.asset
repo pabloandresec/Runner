@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521be3bca3bb3694796aa6a4fd41b47b, type: 3}
-  m_Name: Gloves
+  m_Script: {fileID: 11500000, guid: f16030487e454e747ad8843d10a340d2, type: 3}
+  m_Name: gameData
   m_EditorClassIdentifier: 
-  id: Gloves
-  iconAnimControllers: []
+  data:
+    unlockedVariations:
+    - ropa_1_pelo_1
+    sfxVol: 1
+    musicVol: 1
+    progress: 0

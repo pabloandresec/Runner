@@ -24,7 +24,7 @@ public class Parallax : MonoBehaviour
         absX = Mathf.Abs(transform.localPosition.x);
         if (absX >= boundX)
         {
-            transform.localPosition = new Vector3(0, 0, 0);
+            transform.localPosition = new Vector3(0, transform.localPosition.y, transform.localPosition.z);
         }
     }
 }

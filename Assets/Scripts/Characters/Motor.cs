@@ -41,6 +41,19 @@ public class Motor : MonoBehaviour
     public Vector2 auxDir = Vector2.zero;
     public Vector2 rbVelocity = Vector2.zero;
 
+    [Header("Sound index table")]
+    [Min(0)]
+    [SerializeField] private int onSlide = 0;
+    [SerializeField] private int onJump = 0;
+    [SerializeField] private int onLand = 0;
+
+    private AudioController audio;
+
+    private void Start()
+    {
+        audio = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>();
+    }
+
     private void Update()
     {
         rbVelocity = rb.velocity;
@@ -76,6 +89,7 @@ public class Motor : MonoBehaviour
             }
             if (slide)
             {
+                audio.StartSFXPlayLooped(onSlide);
                 currentMotion += -Vector2.right * acceleration * Time.fixedDeltaTime;
                 currentMotion = new Vector2(Mathf.Clamp(currentMotion.x, minSlideSpeed, maxSpeed), currentMotion.y);
             }
@@ -88,6 +102,11 @@ public class Motor : MonoBehaviour
             {
                 currentMotion = new Vector2(0, 0);
             }
+            if(!slide)
+            {
+                audio.StopSFXPlayLooped(onSlide);
+            }
+
             DisableTopCollider(slide);
             slideState = slide;
             rb.velocity = currentMotion;
@@ -177,6 +196,15 @@ public class Motor : MonoBehaviour
         if(isGrounded && jump && !slideState)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            audio.PlaySFX(onJump);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(isGrounded)
+        {
+            audio.PlaySFX(onLand);
         }
     }
 
@@ -184,7 +212,7 @@ public class Motor : MonoBehaviour
     {
         colliding = true;
 
-        if (isGrounded && colliding)
+        if (isGrounded)
         {
             direction = -Vector2.Perpendicular(collision.GetContact(0).normal).normalized;
             if(direction.y < 0)
