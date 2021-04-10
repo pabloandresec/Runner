@@ -175,16 +175,16 @@ BlendTree:
   m_Name: Air
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 890e24cbce4172041a69034af10d2339, type: 2}
-    m_Threshold: -0.1
+    m_Motion: {fileID: 7400000, guid: 2045b52e82ea2f243865b4e1416a22e0, type: 2}
+    m_Threshold: -0.01
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: xVel
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2045b52e82ea2f243865b4e1416a22e0, type: 2}
-    m_Threshold: 0.1
+    m_Motion: {fileID: 7400000, guid: 890e24cbce4172041a69034af10d2339, type: 2}
+    m_Threshold: 0.01
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -192,8 +192,8 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: yVel
   m_BlendParameterY: Blend
-  m_MinThreshold: -0.1
-  m_MaxThreshold: 0.1
+  m_MinThreshold: -0.01
+  m_MaxThreshold: 0.01
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
