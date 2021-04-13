@@ -19,6 +19,13 @@ public class CharacterAppearanceHandler : MonoBehaviour
         }
     }
 
+    public void ChangeLayerColor(int layer, Color color)
+    {
+        if (layer < 0 || layer >= layers.Length) return;
+        layers[layer].GetComponent<SpriteRenderer>().color = color;
+        SyncAnimators();
+    }
+
     private void SyncAnimators()
     {
         for (int i = 0; i < layers.Length; i++)

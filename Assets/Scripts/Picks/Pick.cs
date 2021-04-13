@@ -2,47 +2,50 @@
 using System.Collections;
 using System;
 
-public class Pick : MonoBehaviour
+public abstract class Pick : MonoBehaviour
 {
-    [SerializeField] private AppearanceWrapper appearance;
-    [Header("References")]
-    [SerializeField] private Animator[] anim;
+    [Header("Tweening")]
+    [SerializeField] protected bool tween = false;
+    [SerializeField] protected float tweenTime = 1f;
+    [SerializeField] protected TweenType tweenType = TweenType.RotPingPong;
     [Header("Sound index")]
-    [SerializeField] private int onPickSoundIndex = 2;
+    [SerializeField] protected int onPickSoundIndex = 2;
 
 
-
+    private void Start()
+    {
+        switch (tweenType)
+        {
+            case TweenType.RotPingPong:
+                LeanTween.rotate(gameObject, new Vector3(0, 0, 40f), 1f).setEaseInOutExpo().setLoopPingPong();
+                break;
+            case TweenType.ScalePingPong:
+                LeanTween.scale(gameObject,new Vector3(0.5f, 1.5f, 1f), 1f).setEaseInOutExpo().setLoopPingPong();
+                break;
+            case TweenType.Both:
+                LeanTween.rotate(gameObject, new Vector3(0, 0, 40f), 1f).setEaseInOutExpo().setLoopPingPong();
+                LeanTween.scale(gameObject, new Vector3(0.5f, 1.5f, 1f), 1f).setEaseInOutExpo().setLoopPingPong();
+                break;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-            collision.GetComponent<CharacterAppearanceHandler>().SwapAppearance(appearance);
-            GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
-            Destroy(gameObject);
+            PickedUp(collision);
         }
     }
 
-    private Transform GetRendererParentTransform()
+    protected virtual void PickedUp(Collider2D collision)
     {
-        Transform t = transform.Find("Renderer");
-        if (t == null)
-        {
-            GameObject render = new GameObject("Renderer");
-            render.transform.SetParent(this.transform);
-            render.transform.localPosition = Vector3.zero;
-        }
-        return t;
+        
     }
+}
 
-    private static void ClearChilds(Transform t)
-    {
-        if (t.childCount > 0)
-        {
-            for (int i = 0; i < t.childCount; i++)
-            {
-                Destroy(t.GetChild(i).gameObject);
-            }
-        }
-    }
+public enum TweenType
+{
+    RotPingPong,
+    ScalePingPong,
+    Both
 }

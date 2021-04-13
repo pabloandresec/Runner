@@ -34,6 +34,7 @@ public class AudioController : MonoBehaviour
     }
     public void StopSFXPlayLooped(int index)
     {
+        if (sfxSource.clip != sfxClips[index]) return;
         loopedIndex = -1;
         sfxSource.Stop();
         sfxSource.clip = null;
