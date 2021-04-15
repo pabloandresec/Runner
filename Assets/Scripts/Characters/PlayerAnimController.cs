@@ -8,7 +8,7 @@ public class PlayerAnimController : AnimController
     {
         for (int i = 0; i < anims.Length; i++)
         {
-            if (anims[i] == null || !anims[i].gameObject.activeInHierarchy) return;
+            if (anims[i] == null || !anims[i].gameObject.activeInHierarchy || anims[i].runtimeAnimatorController == null) return;
             anims[i].SetFloat("xVel", motor.CurrentXVel);
             anims[i].SetBool("isGrounded", !motor.IsGrounded);
             anims[i].SetBool("slide", motor.SlideState);
