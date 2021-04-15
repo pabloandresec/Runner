@@ -13,6 +13,11 @@ public class CharacterAppearanceHandler : MonoBehaviour
             {
                 layers[i].runtimeAnimatorController = appearance.AppearanceController;
                 layers[i].gameObject.SetActive(true);
+                SpriteRenderer sr = layers[i].GetComponent<SpriteRenderer>();
+                if(appearance.Color.a != 0)
+                {
+                    sr.color = appearance.Color;
+                }
                 SyncAnimators();
                 return;
             }

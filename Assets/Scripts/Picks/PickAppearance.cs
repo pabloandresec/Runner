@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PickAppearance : Pick
 {
@@ -10,6 +11,7 @@ public class PickAppearance : Pick
         base.PickedUp(collision);
         collision.GetComponent<CharacterAppearanceHandler>().SwapAppearance(appearance);
         GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
+        AppearanceHasUpdated();
         Destroy(gameObject);
     }
 }

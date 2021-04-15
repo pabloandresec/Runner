@@ -11,6 +11,7 @@ public abstract class Pick : MonoBehaviour
     [Header("Sound index")]
     [SerializeField] protected int onPickSoundIndex = 2;
 
+    public event Action<Pick> AppearanceUpdated;
 
     private void Start()
     {
@@ -39,7 +40,12 @@ public abstract class Pick : MonoBehaviour
 
     protected virtual void PickedUp(Collider2D collision)
     {
-        
+
+    }
+
+    protected void AppearanceHasUpdated()
+    {
+        AppearanceUpdated?.Invoke(this);
     }
 }
 

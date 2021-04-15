@@ -2746,7 +2746,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b623e54b33fd16498bacb454abbc0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelType: 0
   gameData: {fileID: 11400000, guid: 32455396e713ec04bb5c53c8fff1e775, type: 2}
+  player: {fileID: 0}
+  layersParent: {fileID: 1716062389}
 --- !u!1 &457379512
 GameObject:
   m_ObjectHideFlags: 0
@@ -9324,6 +9327,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1716062389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 203433231173278825, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+  m_PrefabInstance: {fileID: 203433231519926707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1729272709
 GameObject:
   m_ObjectHideFlags: 0
@@ -12284,6 +12292,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 203433231248152466, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 203433231248152466, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 203433231248152467, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
 --- !u!61 &1070494200202261616
@@ -12581,6 +12601,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1819019436}
     m_Modifications:
+    - target: {fileID: 5196950315863404320, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
+      propertyPath: appearance.color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196950315863404320, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
+      propertyPath: appearance.color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196950315863404320, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
+      propertyPath: appearance.color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196950315863404320, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
+      propertyPath: appearance.color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5196950315863404322, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
       propertyPath: m_Name
       value: PickUp_Pelo_1

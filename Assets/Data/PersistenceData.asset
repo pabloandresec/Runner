@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5cf3d8113df0f4ca40bed969b86e8f, type: 3}
   m_Name: PersistenceData
   m_EditorClassIdentifier: 
-  currentCombination: 
+  layers: []
   professionPicks: []

@@ -12,6 +12,7 @@ public class PickColorShifter : Pick
         base.PickedUp(collision);
         collision.GetComponent<CharacterAppearanceHandler>().ChangeLayerColor(layer, color);
         GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
+        AppearanceHasUpdated();
         Destroy(gameObject);
     }
 }

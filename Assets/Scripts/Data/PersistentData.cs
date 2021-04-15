@@ -7,10 +7,35 @@ using System.Collections.Generic;
 [CreateAssetMenu(menuName = "PersistentData", fileName = "Data")]
 public class PersistentData : ScriptableObject
 {
-    [SerializeField] private string currentCombination = "";
+    [SerializeField] private AppearanceWrapper[] layers;
     [SerializeField] private List<PickAmountPair> professionPicks;
 
-    public string CurrentCombination { get => currentCombination; set => currentCombination = value; }
+    public AppearanceWrapper[] Layers { get => layers; }
+
+    public void SetLayersAmount(int i)
+    {
+        if(layers == null || layers.Length != i)
+        {
+            layers = new AppearanceWrapper[i];
+            Debug.Log("Appearance save init");
+            return;
+        }
+        Debug.Log("Appearance saver already has values");
+    }
+
+    public void LoadPlayer(CharacterAppearanceHandler player)
+    {
+        if(layers[0].AppearanceController == null)
+        {
+            Debug.LogWarning("Save has not a base layer");
+            return;
+        }
+
+        for (int i = 0; i < layers.Length; i++)
+        {
+            player.SwapAppearance(layers[i]);
+        }
+    }
 
     public void AddNewPick(string newPick)
     {
@@ -33,6 +58,11 @@ public class PersistentData : ScriptableObject
     {
         professionPicks.Clear();
         Debug.Log("Picks Cleared!");
+    }
+
+    public void SetAppearance(int index, AppearanceWrapper appearance)
+    {
+        layers[index] = appearance;
     }
 }
 
