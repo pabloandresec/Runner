@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6745217974883585547}
   - component: {fileID: 6745217974883585548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Layer0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6745217975181024793}
-  - component: {fileID: 6745217975181024794}
+  - component: {fileID: 6591976713288377539}
   m_Layer: 8
   m_Name: Banquito
   m_TagString: Untagged
@@ -114,8 +114,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &6745217975181024794
-PolygonCollider2D:
+--- !u!61 &6591976713288377539
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,7 +127,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.023771286, y: -0.106972694}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -137,21 +137,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.79215145, y: 0.5089588}
-      - {x: -0.7286988, y: 0.5128453}
-      - {x: -0.7299533, y: 0.3605671}
-      - {x: -0.6636839, y: 0.34586906}
-      - {x: -0.66022635, y: 0.23270416}
-      - {x: -0.5761528, y: 0.23048687}
-      - {x: -0.58044904, y: -0.7241353}
-      - {x: -0.40151882, y: -0.7288742}
-      - {x: -0.39830494, y: -0.32597446}
-      - {x: 0.4735093, y: -0.309268}
-      - {x: 0.47350216, y: -0.7307348}
-      - {x: 0.64816487, y: -0.7297685}
-      - {x: 0.6578541, y: 0.220325}
-      - {x: 0.7461152, y: 0.22561407}
-      - {x: 0.7394171, y: 0.35009956}
-      - {x: 0.79640007, y: 0.35450882}
+  serializedVersion: 2
+  m_Size: {x: 1.5467491, y: 1.261488}
+  m_EdgeRadius: 0
