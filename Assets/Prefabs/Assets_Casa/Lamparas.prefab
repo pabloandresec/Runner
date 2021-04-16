@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2559536634345755465}
   - component: {fileID: 2559536634345755464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Layer0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,8 +91,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2559536636311869509}
-  - component: {fileID: 2559536636311869508}
-  m_Layer: 0
+  - component: {fileID: 7522318007663651214}
+  m_Layer: 8
   m_Name: Lamparas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,8 +114,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &2559536636311869508
-PolygonCollider2D:
+--- !u!61 &7522318007663651214
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,7 +127,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.014748573, y: -0.9291537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -137,9 +137,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -2.4231706, y: -0.82249546}
-      - {x: -2.424566, y: -0.9648571}
-      - {x: 2.4951968, y: -0.96624637}
-      - {x: 2.4917593, y: -0.8127518}
+  serializedVersion: 2
+  m_Size: {x: 4.9230976, y: 0.26257372}
+  m_EdgeRadius: 0
