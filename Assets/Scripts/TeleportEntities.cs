@@ -7,18 +7,47 @@ public class TeleportEntities : MonoBehaviour
 {
     [SerializeField] private Transform destiny;
     [SerializeField] private CinemachineVirtualCamera cam;
+    [SerializeField] private float restingTime = 2;
+    bool warped = false;
+    float tPassed = 0;
 
+    Vector3 posPlayerDiff = Vector3.zero;
+    Vector3 finalPos = Vector3.zero;
+    Vector3 playerCamDifference = Vector3.zero;
+    Vector3 delta = Vector3.zero;
+
+    private void FixedUpdate()
+    {
+        if(warped)
+        {
+            tPassed += Time.fixedDeltaTime;
+            if(tPassed > restingTime)
+            {
+                tPassed = 0;
+                warped = false;
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            Vector3 posPlayerDiff = rb.transform.position - transform.position;
-            Vector3 finalPos = destiny.position + posPlayerDiff;
-            Vector3 delta = finalPos - cam.transform.position + (cam.transform.position - rb.transform.position);
+            posPlayerDiff = transform.position - rb.transform.position;
+            finalPos = destiny.position + posPlayerDiff;
+            playerCamDifference = cam.transform.position - rb.transform.position;
+            delta = finalPos - cam.transform.position + playerCamDifference;
             cam.OnTargetObjectWarped(rb.transform, delta);
             rb.transform.position = finalPos;
+            Debug.Log("TELEPORTED!");
+            warped = true;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Debug.DrawLine(transform.position, finalPos);
     }
 }
