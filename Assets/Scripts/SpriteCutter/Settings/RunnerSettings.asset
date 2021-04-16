@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
     packName: Ropa5
-    spriteSheet: {fileID: 2800000, guid: 20f084a913a95b14baeedd1878a4b622, type: 3}
+    spriteSheet: {fileID: 2800000, guid: 84c449eaec486be419ebd8759c4d6c6c, type: 3}
     columns: 6
     rows: 7
     ppu: 60
