@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905371231018750144}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 49.72, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -97,7 +97,8 @@ MonoBehaviour:
   tweenTime: 0.5
   tweenType: 0
   onPickSoundIndex: 2
-  color: {r: 0, g: 1, b: 0.118306875, a: 1}
+  color: {r: 1, g: 0.4694984, b: 0, a: 1}
+  icon: {fileID: 1905371232355645141}
   layer: 1
 --- !u!1 &1905371231570759826
 GameObject:
@@ -203,7 +204,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0a89246f4f4dee7489efa66eecf08dcc, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.0009315014, a: 1}
+  m_Color: {r: 1, g: 0.4694984, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

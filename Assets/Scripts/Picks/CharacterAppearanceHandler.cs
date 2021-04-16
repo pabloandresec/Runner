@@ -24,6 +24,20 @@ public class CharacterAppearanceHandler : MonoBehaviour
         }
     }
 
+    public void ClearLayer(int index)
+    {
+        for (int i = 0; i < layers.Length; i++)
+        {
+            if (i == index)
+            {
+                layers[i].runtimeAnimatorController = null;
+                layers[i].gameObject.SetActive(false);
+                SyncAnimators();
+                return;
+            }
+        }
+    }
+
     public void ChangeLayerColor(int layer, Color color)
     {
         if (layer < 0 || layer >= layers.Length) return;

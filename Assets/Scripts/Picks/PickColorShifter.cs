@@ -5,7 +5,14 @@ public class PickColorShifter : Pick
 {
     [Header("Color")]
     [SerializeField] private Color color;
+    [SerializeField] private SpriteRenderer icon;
     [SerializeField] private int layer;
+
+
+    private void OnValidate()
+    {
+        icon.color = color;
+    }
 
     protected override void PickedUp(Collider2D collision)
     {
