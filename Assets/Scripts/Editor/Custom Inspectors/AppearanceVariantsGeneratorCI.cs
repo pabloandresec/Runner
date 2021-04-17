@@ -21,7 +21,8 @@ public class AppearanceVariantsGeneratorCI : Editor
         base.OnInspectorGUI();
         if(GUILayout.Button("Process Combinations"))
         {
-            tgt.GenerateVariants();
+            Debug.Log("Generating variants");
+            //tgt.GenerateVariants();
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 
 public class AppearanceVariantsGenerator : MonoBehaviour
 {
+    /*
     [SerializeField] private UnlockeableData unlocks;
     [SerializeField] private GameObject diplayerPrefab;
     [SerializeField] private Transform contentParent;
@@ -60,5 +61,5 @@ public class AppearanceVariantsGenerator : MonoBehaviour
             }
         }
         return selected;
-    }
+    }*/
 }
