@@ -142,6 +142,24 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    public void TweenOverlayAlpha(float alpha)
+    {
+        Color newColor = new Color(1, 1, 1, alpha);
+        LeanTween.color(blackOverlay.GetComponent<RectTransform>(), newColor, 0.5f);
+    }
+
+    public void TweenOverlayToBlack(float time)
+    {
+        Color newColor = Color.black;
+        LeanTween.color(blackOverlay.GetComponent<RectTransform>(), newColor, 0.5f);
+    }
+
+    public void TweenOverlayToClear(float time)
+    {
+        Color newColor = Color.clear;
+        LeanTween.color(blackOverlay.GetComponent<RectTransform>(), newColor, 0.5f);
+    }
+
     #region FadeMenu
     public void FadeInMenu(GameObject menu)
     {

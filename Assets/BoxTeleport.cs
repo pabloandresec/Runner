@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class BoxTeleport : MonoBehaviour
@@ -21,6 +22,8 @@ public class BoxTeleport : MonoBehaviour
     float ortGraphicSize = 5;
     private Vector3 ogOffset;
     private CinemachineFramingTransposer trans;
+    [SerializeField] private UnityEvent OnBoxEnter;
+
 
     private void Start()
     {
@@ -34,6 +37,7 @@ public class BoxTeleport : MonoBehaviour
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (rb != null && !warping)
         {
+            OnBoxEnter?.Invoke();
             warping = true;
             rb.GetComponent<Motor>().enabled = false;
             rb.isKinematic = true;
