@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BoxTeleport : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class BoxTeleport : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioController audioController;
     [SerializeField] private int onTriggerEnter = 4;
+    [Header("Next level")]
+    [SerializeField] private bool teleportToNextLevel = false;
+    [SerializeField] private int nextLevelBuildIndex = 2;
     private bool warping = false;
     float ortGraphicSize = 5;
     private Vector3 ogOffset;
@@ -41,12 +45,19 @@ public class BoxTeleport : MonoBehaviour
             LeanTween.value(cam.gameObject, v3 => trans.m_TrackedObjectOffset = v3, ogOffset, Vector3.zero, animTime * 0.9f); // offset tween
             LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, ortGraphicSize, 0.1f, animTime + animTime * 0.1f).setOnComplete(() => { // zoom in tween
                 //Cuando se termine de hacer un zoom in a la caja
-                Teleport(rb);
-                LeanTween.value(cam.gameObject, v3 => trans.m_TrackedObjectOffset = v3, Vector3.zero, ogOffset, animTime * 0.9f); // offset tween
-                LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, 0.1f, ortGraphicSize, animTime).setOnComplete(() => { // zoom out tween
-                    //Cuando se termine de hacer un zoom out a la caja
-                    warping = false;
-                });
+                if(teleportToNextLevel)
+                {
+                    SceneManager.LoadScene(nextLevelBuildIndex);
+                }
+                else
+                {
+                    Teleport(rb);
+                    LeanTween.value(cam.gameObject, v3 => trans.m_TrackedObjectOffset = v3, Vector3.zero, ogOffset, animTime * 0.9f); // offset tween
+                    LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, 0.1f, ortGraphicSize, animTime).setOnComplete(() => { // zoom out tween
+                                                                                                                                                //Cuando se termine de hacer un zoom out a la caja
+                        warping = false;
+                    });
+                }
             });
         }
     }
