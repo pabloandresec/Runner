@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2985994438976380345}
   - component: {fileID: 2985994438976380350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuadro1_fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 2985994439182862780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.08, y: -1.15, z: 0}
-  m_LocalScale: {x: 1.2366, y: 1.2366, z: 1.2366}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 2985994439718639700}
   - {fileID: 2985994438976380345}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2985994439718639700}
   - component: {fileID: 2985994439718639701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuadro1_color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
