@@ -32,7 +32,7 @@ public class PersistentData : ScriptableObject
             return;
         }
 
-        for (int i = 0; i < layers.Length; i++)
+        for (int i = 0; i < 2; i++)
         {
             player.SwapAppearance(layers[i]);
         }
