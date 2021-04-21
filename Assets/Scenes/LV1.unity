@@ -1568,6 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 418653466}
+  - component: {fileID: 418653467}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -1622,6 +1623,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418653467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418653465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b623e54b33fd16498bacb454abbc0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelType: 1
+  gameData: {fileID: 11400000, guid: 32455396e713ec04bb5c53c8fff1e775, type: 2}
+  player: {fileID: 266898082}
+  layersParent: {fileID: 747604967}
 --- !u!1001 &423465410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2763,6 +2780,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1937209639751916099, guid: bf90066e40ffc414c9b8d3c7a1ab57eb, type: 3}
   m_PrefabInstance: {fileID: 1937209640466788189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &747604967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 203433231173278825, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+  m_PrefabInstance: {fileID: 203433231519926707}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &770545057
 PrefabInstance:
@@ -7811,6 +7833,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 203433231105506212, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 32455396e713ec04bb5c53c8fff1e775, type: 2}
     - target: {fileID: 203433231105506236, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
       propertyPath: m_Name
       value: Player

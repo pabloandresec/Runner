@@ -20,13 +20,14 @@ public class GameController : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterAppearanceHandler>();
         }
-        pickedItems = 0;
+        
         gameData.SetLayersAmount(layersParent.childCount);
         gameData.LoadPlayer(player);
 
         professionPicks = FindObjectsOfType<PickProfession>();
-        if(professionPicks.Length > 0)
+        if(professionPicks.Length > 2)
         {
+            pickedItems = 0;
             gameData.ClearPicks();
             foreach (PickProfession p in professionPicks)
             {
