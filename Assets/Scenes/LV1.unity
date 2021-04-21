@@ -2070,11 +2070,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: b1dd71ee73928604aa1d6d67ecbb6e7e, type: 2}
   sfxClips:
-  - {fileID: 8300000, guid: 451d589e314b9a04db3b03e419462b1f, type: 3}
-  - {fileID: 8300000, guid: 6d6b646b2de253b43a70e325c4e2842a, type: 3}
-  - {fileID: 8300000, guid: f05660e94048e714aaa92a04bf7de676, type: 3}
-  - {fileID: 8300000, guid: 5f152b67d5bb8a24d81a42477a18654c, type: 3}
-  musicClips: []
+  - {fileID: 8300000, guid: 54ca1ba19271a15449073b625737b187, type: 3}
+  - {fileID: 8300000, guid: f9ddddcb5c431764fbe6bbafa9f46e89, type: 3}
+  - {fileID: 8300000, guid: 92c0ebb0a3add024f97d68882d8e467e, type: 3}
+  - {fileID: 8300000, guid: 21af6876b6257e145b6d3951e99c8b7c, type: 3}
+  musicClips:
+  - {fileID: 8300000, guid: a7f19190d888b2941ad1682112f2da49, type: 3}
   sfxSource: {fileID: 1853368889}
   musicSource: {fileID: 1170364050}
   soundEnabled: 1
@@ -4036,10 +4037,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

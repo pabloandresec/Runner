@@ -20,6 +20,12 @@ public class AudioController : MonoBehaviour
 
     private bool courutine = false;
 
+    private void Start()
+    {
+        musicSource.clip = musicClips[0];
+        musicSource.Play();
+    }
+
     public void PlaySFX(int index)
     {
         sfxSource.PlayOneShot(sfxClips[index]);
