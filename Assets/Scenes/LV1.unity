@@ -135,6 +135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (2)
@@ -145,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -391,6 +395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (4)
@@ -401,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -448,6 +456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso
@@ -458,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -702,6 +714,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (3)
@@ -951,6 +967,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (6)
@@ -961,7 +981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1008,6 +1028,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (4)
@@ -1161,6 +1185,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (5)
@@ -1171,7 +1199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1577,6 +1605,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (1)
@@ -1587,7 +1619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1916,6 +1948,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (2)
@@ -3298,6 +3334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso
@@ -3308,7 +3348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3879,6 +3919,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso
@@ -4444,6 +4488,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (4)
@@ -4454,7 +4502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4510,6 +4558,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1951036247}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (3)
@@ -4520,7 +4572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.8
+      value: -26.46
       objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556543, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4567,6 +4619,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (1)
@@ -5306,6 +5362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (4)
@@ -5445,6 +5505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (6)
@@ -5974,6 +6038,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1879769095}
     m_Modifications:
+    - target: {fileID: 1026978256303556417, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026978256303556542, guid: cb64cfac1dad9344688f4ccfd22858fb, type: 3}
       propertyPath: m_Name
       value: Piso (5)
