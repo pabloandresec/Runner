@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,7 +54,21 @@ public class EndingChooser : MonoBehaviour
 
     private void SelectEpilogue(ProfessionCombinations professionCombinations)
     {
-        throw new NotImplementedException();
+        string professionName = professionCombinations.ProfessionName;
+        string hairName = data.Layers[1].AppearanceController.name;
+        string hairColor = data.Layers[1].ColorName;
+        string fullnamesprite = professionName + "_" + hairName + "_" + hairColor;
+
+        Sprite s = professionCombinations.PosibleCobinations.FirstOrDefault(pc => pc.name.Contains(fullnamesprite));
+        if(s == null)
+        {
+            Debug.LogError("(" + fullnamesprite + ") no existe");
+        }
+        else
+        {
+            Debug.Log("(" + fullnamesprite + ") Encontrado");
+            layers[0].sprite = s;
+        }
     }
 
 }
