@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 209670225}
   - component: {fileID: 209670226}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Logos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 647, y: -49.642242}
+  m_AnchoredPosition: {x: 753, y: -49.642242}
   m_SizeDelta: {x: 431.39554, y: 99.284485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017491605
@@ -1288,7 +1288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1361.3938, y: -49.642242}
+  m_AnchoredPosition: {x: 1455, y: -49.642242}
   m_SizeDelta: {x: 477.21234, y: 99.284485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661964132
@@ -1495,7 +1495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 984, y: -49.642242}
+  m_AnchoredPosition: {x: 1095, y: -49.642242}
   m_SizeDelta: {x: 477.21234, y: 99.284485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741689737
@@ -1570,7 +1570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 313, y: -49.642242}
+  m_AnchoredPosition: {x: 402, y: -49.642242}
   m_SizeDelta: {x: 145.73055, y: 99.284485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880466175
