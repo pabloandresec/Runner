@@ -11,6 +11,7 @@ public class PersistentData : ScriptableObject
     [SerializeField] private List<PickAmountPair> professionPicks;
 
     public AppearanceWrapper[] Layers { get => layers; }
+    public List<PickAmountPair> ProfessionPicks { get => professionPicks; }
 
     public void SetLayersAmount(int i)
     {

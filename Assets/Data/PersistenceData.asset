@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: PersistenceData
   m_EditorClassIdentifier: 
   layers: []
-  professionPicks: []
+  professionPicks:
+  - itemName: Pintar
+    amount: 2
+  - itemName: Informatica
+    amount: 1
+  - itemName: Musica
+    amount: 4
