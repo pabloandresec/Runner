@@ -98,6 +98,7 @@ MonoBehaviour:
   tweenType: 0
   onPickSoundIndex: 2
   color: {r: 1, g: 0.4694984, b: 0, a: 1}
+  colorName: 
   icon: {fileID: 1905371232355645141}
   layer: 1
 --- !u!1 &1905371231570759826

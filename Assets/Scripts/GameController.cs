@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class GameController : MonoBehaviour
 
     private PickProfession[] professionPicks;
     private Pick[] picks;
+    private int pickedItems = 0;
 
     private void Start()
     {
@@ -17,6 +20,7 @@ public class GameController : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterAppearanceHandler>();
         }
+        pickedItems = 0;
         gameData.SetLayersAmount(layersParent.childCount);
         gameData.LoadPlayer(player);
 
@@ -36,6 +40,16 @@ public class GameController : MonoBehaviour
             p.AppearanceUpdated += OnPickedAppearance;
         }
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.KeypadMultiply))
+        {
+            int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneManager.LoadScene(nextScene);
+        }
+    }
+
 
     private void OnDisable()
     {
@@ -57,7 +71,7 @@ public class GameController : MonoBehaviour
     {
         for (int i = 0; i < layersParent.childCount; i++)
         {
-            AppearanceWrapper tempAppear = new AppearanceWrapper(i, layersParent.GetChild(i).GetComponent<Animator>().runtimeAnimatorController, layersParent.GetChild(i).GetComponent<SpriteRenderer>().color);
+            AppearanceWrapper tempAppear = new AppearanceWrapper(i, layersParent.GetChild(i).GetComponent<Animator>().runtimeAnimatorController, layersParent.GetChild(i).GetComponent<SpriteRenderer>().color, "Black");
             gameData.SetAppearance(i, tempAppear);
         }
         p.AppearanceUpdated -= OnPickedAppearance;
@@ -67,6 +81,11 @@ public class GameController : MonoBehaviour
     {
         gameData.AddNewPick(pickID);
         p.onPickedItem -= OnPickedProfession;
+        pickedItems++;
+        if(pickedItems >= 10)
+        {
+            GameObject.FindGameObjectWithTag("UI").GetComponent<GameUI>().LoadScene(3);
+        }
     }
 }
 

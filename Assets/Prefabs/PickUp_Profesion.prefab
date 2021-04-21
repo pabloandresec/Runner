@@ -57,7 +57,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657536101489812517}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.61, y: -1.103, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -128,7 +128,7 @@ MonoBehaviour:
   tweenTime: 1
   tweenType: 0
   onPickSoundIndex: 2
-  id: Arte
+  id: Informatica
 --- !u!1 &6657536102342246963
 GameObject:
   m_ObjectHideFlags: 0

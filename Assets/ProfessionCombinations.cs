@@ -7,8 +7,10 @@ public class ProfessionCombinations
 {
     [SerializeField] private string professionName = "No name";
     [SerializeField] private MinMaxValue[] values;
+    [SerializeField] private Sprite[] posibleCobinations;
 
-    public string ProfessionName { get => professionName; set => professionName = value; }
+    public string ProfessionName { get => professionName; }
+    public Sprite[] PosibleCobinations { get => posibleCobinations; }
 
     public int Test(PickAmountPair pickAmountPair)
     {

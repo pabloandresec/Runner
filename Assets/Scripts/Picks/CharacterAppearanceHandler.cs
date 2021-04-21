@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CharacterAppearanceHandler : MonoBehaviour
 {
+    [SerializeField] private PersistentData data;
     [SerializeField] private Animator[] layers;
 
     public void SwapAppearance(AppearanceWrapper appearance)
@@ -24,6 +25,11 @@ public class CharacterAppearanceHandler : MonoBehaviour
         }
     }
 
+    public void ChangeLayerColorName(string colorName, int layerIndex)
+    {
+        data.Layers[layerIndex].ColorName = colorName;
+    }
+
     public void ClearLayer(int index)
     {
         for (int i = 0; i < layers.Length; i++)
@@ -38,7 +44,7 @@ public class CharacterAppearanceHandler : MonoBehaviour
         }
     }
 
-    public void ChangeLayerColor(int layer, Color color)
+    public void ChangeLayerColor(int layer, Color color, string colorName)
     {
         if (layer < 0 || layer >= layers.Length) return;
         layers[layer].GetComponent<SpriteRenderer>().color = color;
