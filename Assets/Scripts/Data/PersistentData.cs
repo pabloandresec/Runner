@@ -32,9 +32,12 @@ public class PersistentData : ScriptableObject
             return;
         }
 
-        for (int i = 0; i < layers.Length; i++)
+        for (int i = 0; i < 2; i++)
         {
-            player.SwapAppearance(layers[i]);
+            if(layers[i].AppearanceController != null)
+            {
+                player.SwapAppearance(layers[i]);
+            }
         }
     }
 
@@ -44,7 +47,9 @@ public class PersistentData : ScriptableObject
         {
             professionPicks = new List<PickAmountPair>();
         }
+
         PickAmountPair query = professionPicks.FirstOrDefault(n => n.itemName == newPick);
+
         if(query == null)
         {
             professionPicks.Add(new PickAmountPair(newPick, 1));
