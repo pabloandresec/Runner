@@ -8,9 +8,11 @@ using UnityEngine;
 /// </summary>
 public class Motor : MonoBehaviour
 {
-    [SerializeField] private Collider2D col = null;
+    [SerializeField] private CapsuleCollider2D col = null;
     [SerializeField] private Rigidbody2D rb = null;
-    [SerializeField] private Collider2D top = null;
+    [Header("Collider values")]
+    [SerializeField] private ColliderRectValues standValues;
+    [SerializeField] private ColliderRectValues slideValues;
     [Header("Sensors")]
     [SerializeField] private Transform[] sensors = null;
     [SerializeField] private LayerMask groundMask;
@@ -81,40 +83,35 @@ public class Motor : MonoBehaviour
 
     private void MoveAcceleration(bool slide)
     {
-        if(IsGrounded)
+        currentMotion = rb.velocity;
+        if (IsGrounded)
         {
-            if (getUpLocked)
+            if(getUpLocked) slide = true; //trabar slide si esta por debajo de algo aun
+            if (slide) //Deslizarse si activo
             {
-                slide = true;
-            }
-            if (slide)
-            {
+                //Debug.Log("SLIDIN");
                 audio.StartSFXPlayLooped(onSlide);
                 currentMotion += -Vector2.right * acceleration * Time.fixedDeltaTime;
                 currentMotion = new Vector2(Mathf.Clamp(currentMotion.x, minSlideSpeed, maxSpeed), currentMotion.y);
             }
-            else if (!bottomWallSensor)
-            {
-                currentMotion += Vector2.right * acceleration * Time.fixedDeltaTime;
-                currentMotion = Vector2.ClampMagnitude(currentMotion, maxSpeed);
-            }
             else
             {
-                currentMotion = new Vector2(0, 0);
-            }
-            if(!slide)
-            {
                 audio.StopSFXPlayLooped(onSlide);
+                if (!bottomWallSensor && !topWallSensor) //Si los sensores frontales esta libres acumular velocidad
+                {
+                    currentMotion += Vector2.right * acceleration * Time.fixedDeltaTime;
+                }
             }
-
-            DisableTopCollider(slide);
+            ChangeColliderValues(slide); //si se esta deslizando cambiar a los valores correspondientes
             slideState = slide;
+
+            currentMotion = Vector2.ClampMagnitude(currentMotion, maxSpeed);
             rb.velocity = currentMotion;
         }
         else
         {
             slideState = false;
-            DisableTopCollider(slideState);
+            ChangeColliderValues(slideState);
             audio.StopSFXPlayLooped(onSlide);
 
             if (!bottomWallSensor && !topWallSensor && rb.velocity.x < maxSpeed * 0.3f)
@@ -148,7 +145,7 @@ public class Motor : MonoBehaviour
             {
                 currentMotion = new Vector2(0, 0);
             }
-            DisableTopCollider(slide);
+            ChangeColliderValues(slide);
             slideState = slide;
             rb.velocity = currentMotion;
         }
@@ -166,45 +163,66 @@ public class Motor : MonoBehaviour
 
     private void MoveInstantaneous(bool slide)
     {
-        if (!bottomWallSensor) // Si no hay una pared delante del sensor inferior
+        if (IsGrounded)
         {
-            if (getUpLocked)
+            if (getUpLocked) slide = true; //trabar slide si esta por debajo de algo aun
+            if (slide) //Deslizarse si activo
             {
-                slide = true;
+                //Debug.Log("SLIDIN");
+                audio.StartSFXPlayLooped(onSlide);
+                currentMotion = new Vector2(slideSpeed, rb.velocity.y);
             }
-            float s = slide ? slideSpeed : maxSpeed;
-            slideState = slide ? true : false;
-            DisableTopCollider(slide);
-
-            rb.velocity = new Vector2(s, rb.velocity.y);
+            else
+            {
+                audio.StopSFXPlayLooped(onSlide);
+                currentMotion = new Vector2(maxSpeed, rb.velocity.y);
+            }
+            ChangeColliderValues(slide); //si se esta deslizando cambiar a los valores correspondientes
+            slideState = slide;
+            rb.velocity = currentMotion;
         }
         else
         {
             slideState = false;
+            ChangeColliderValues(slideState);
+            audio.StopSFXPlayLooped(onSlide);
+            rb.velocity = new Vector2(maxSpeed, Mathf.Clamp(rb.velocity.y, -15, 20)); //Clamp fallspeed
+            currentMotion = rb.velocity;
         }
     }
 
-    private void DisableTopCollider(bool slide)
+    private void ChangeColliderValues(bool slide)
     {
-        if (top != null && slide)
+        if (slide)
         {
-            top.enabled = false;
+            col.offset = slideValues.offset;
+            col.size = slideValues.size;
         }
         else
         {
-            top.enabled = true;
+            col.offset = standValues.offset;
+            col.size = standValues.size;
         }
     }
 
     public void Jump(bool jump)
     {
-        if(isGrounded && jump)
+        if(isGrounded && jump && !slideState)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            if(motionMode == MotionMode.ACCELERATION)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                currentMotion = new Vector2(rb.velocity.x, jumpForce);
+            }
+            else if(motionMode == MotionMode.INSTANTANEOUS)
+            {
+                rb.velocity = new Vector2(maxSpeed, jumpForce);
+                currentMotion = new Vector2(maxSpeed, jumpForce);
+            }
             audio.PlaySFX(onJump);
         }
     }
-
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(isGrounded)
@@ -212,22 +230,26 @@ public class Motor : MonoBehaviour
             //audio.PlaySFX(onLand);
         }
     }
+    */
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         colliding = true;
 
-        if (isGrounded)
+        if(motionMode == MotionMode.EXPERIMENTAL)
         {
-            direction = -Vector2.Perpendicular(collision.GetContact(0).normal).normalized;
-            if(direction.y < 0)
+            if (isGrounded)
             {
-                direction.y = 0;
+                direction = -Vector2.Perpendicular(collision.GetContact(0).normal).normalized;
+                if (direction.y < 0)
+                {
+                    direction.y = 0;
+                }
             }
-        }
-        else
-        {
-            direction = Vector2.zero;
+            else
+            {
+                direction = Vector2.zero;
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
