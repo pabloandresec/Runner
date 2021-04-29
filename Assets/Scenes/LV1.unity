@@ -8363,30 +8363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: top
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: groundMask.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: sensorRadios.Array.data[0]
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: acceleration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: motionMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231105506208, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: slideSpeed
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 203433231105506211, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.8
@@ -8434,10 +8410,6 @@ PrefabInstance:
     - target: {fileID: 203433231105506236, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 203433231622051550, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1077
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}

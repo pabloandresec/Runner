@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Linq;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class GameController : MonoBehaviour
     private PickProfession[] professionPicks;
     private Pick[] picks;
     private int pickedItems = 0;
+    private Dictionary<String, int> pickedItemsAmount;
 
     private void Start()
     {
@@ -28,6 +31,7 @@ public class GameController : MonoBehaviour
         if(professionPicks.Length > 2)
         {
             pickedItems = 0;
+            pickedItemsAmount = new Dictionary<string, int>();
             gameData.ClearPicks();
             foreach (PickProfession p in professionPicks)
             {
@@ -50,7 +54,6 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(nextScene);
         }
     }
-
 
     private void OnDisable()
     {
@@ -82,10 +85,28 @@ public class GameController : MonoBehaviour
     {
         gameData.AddNewPick(pickID);
         p.onPickedItem -= OnPickedProfession;
-        pickedItems++;
-        if(pickedItems >= 10)
+
+        if(pickedItemsAmount.ContainsKey(pickID))
         {
-            GameObject.FindGameObjectWithTag("UI").GetComponent<GameUI>().LoadScene(3);
+            int val = pickedItemsAmount[pickID];
+            Debug.Log("El sistema ya tenia " + val + " picks de " + pickID);
+            val++;
+            pickedItemsAmount[pickID] = val;
+            Debug.Log("El sistema tiene en total " +val + " picks de " + pickID);
+        }
+        else
+        {
+            Debug.Log("El sistema ha agregado " + pickID);
+            pickedItemsAmount.Add(pickID, 1);
+        }
+
+        foreach (KeyValuePair<string,int> pairPick in pickedItemsAmount)
+        {
+            if(pairPick.Value >= 3)
+            {
+                GameObject.FindGameObjectWithTag("UI").GetComponent<GameUI>().LoadScene(3);
+                return;
+            }
         }
     }
 }
