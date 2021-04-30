@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Moda
+  m_EditorClassIdentifier: 
+  professionName: Moda
+  skins:
+  - {fileID: 21300000, guid: b62baac1e842bef4db713c0d74abbe16, type: 3}
+  - {fileID: 21300000, guid: 81c968b922b34404b8858d14116317f7, type: 3}
+  - {fileID: 21300000, guid: b92b071e08ed1274897028e7f91cdc32, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: 5ac38a623a233eb45b9a75b801028b99, type: 3}
+  - {fileID: 21300000, guid: d690a73de7a53524f9ba95ccc2215b5f, type: 3}
+  - {fileID: 21300000, guid: c6eac90eee8eb994583671f6a9a342fa, type: 3}
+  - {fileID: 21300000, guid: bf5a2d6aa8ef2a44fa4a62b287af4670, type: 3}
+  - {fileID: 21300000, guid: 7f89bc110ef3012479bbb91b80032c71, type: 3}
+  - {fileID: 21300000, guid: 545f1ce812220e342bee0187c3c676d3, type: 3}

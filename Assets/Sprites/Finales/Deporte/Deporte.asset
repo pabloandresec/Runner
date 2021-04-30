@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Deporte
+  m_EditorClassIdentifier: 
+  professionName: Deporte
+  skins:
+  - {fileID: 21300000, guid: 3d45f1b236b787742bbb4b8fa7770c68, type: 3}
+  - {fileID: 21300000, guid: 21697ad513104a3478c32b798585fb49, type: 3}
+  - {fileID: 21300000, guid: 7925ec7bf4a933f428ec3c1bb57cafd8, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: d6aee9a06062b094f9f750e63daba789, type: 3}
+  - {fileID: 21300000, guid: 12a5228049028f749947645985c34187, type: 3}
+  - {fileID: 21300000, guid: d1c3e4b13d2ff97459807af31f620642, type: 3}
+  - {fileID: 21300000, guid: daa8375e91c5d744b9023858f1b61ea4, type: 3}
+  - {fileID: 21300000, guid: d6b20676faac1fe428707d9bbc527cc6, type: 3}
+  - {fileID: 21300000, guid: 51e2f9f97d7eba14b8e64ff538d372a1, type: 3}

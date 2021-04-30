@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Autos
+  m_EditorClassIdentifier: 
+  professionName: Autos
+  skins:
+  - {fileID: 21300000, guid: 7fedacc0adc15b148bf68b8cd33e2c11, type: 3}
+  - {fileID: 21300000, guid: 9077b895d0396e543a508c7c28fe3b99, type: 3}
+  - {fileID: 21300000, guid: 90373855e52191a4593dbb98304b22a4, type: 3}
+  - {fileID: 21300000, guid: c62ae4af3708cae449f11d9ad731bb56, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: 0d0074e35a6779348a9abe59f5972d81, type: 3}
+  - {fileID: 21300000, guid: efc51cd6c6604e341b4a8473dcb43ff2, type: 3}
+  - {fileID: 21300000, guid: a95dcbca8d5ba1c4c8b2a30d49ec006b, type: 3}
+  - {fileID: 21300000, guid: 976cc3295b0c8bf459fa2d736e5b7bb9, type: 3}

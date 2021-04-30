@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Cocinar
+  m_EditorClassIdentifier: 
+  professionName: Cocinar
+  skins:
+  - {fileID: 21300000, guid: 90fcc1b8d43f6d9418589b007cff49a1, type: 3}
+  - {fileID: 21300000, guid: f7c372d1e442f9b4abc076862407e3a6, type: 3}
+  - {fileID: 21300000, guid: b03befa9f8084564797547041ef1dd37, type: 3}
+  - {fileID: 21300000, guid: ea49e6c016169b3479e9cbcff472bade, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: 5ab0baa535dc24b42aee6a0dba67c451, type: 3}
+  - {fileID: 21300000, guid: b0a313004f458d64298d12517dd530da, type: 3}
+  - {fileID: 21300000, guid: 22b6cbe60cc9c3d48a4cf7f6d1b0c546, type: 3}
+  - {fileID: 21300000, guid: 1d839dc7d2bbc9a4281005b675ea02e2, type: 3}
+  - {fileID: 21300000, guid: 282f205065c647f479f71db4a9bf78cc, type: 3}

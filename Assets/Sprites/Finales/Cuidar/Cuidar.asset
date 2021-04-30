@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Cuidar
+  m_EditorClassIdentifier: 
+  professionName: Cuidar
+  skins:
+  - {fileID: 21300000, guid: 6469a7cc1203d1d46aa2e1fbf37c872f, type: 3}
+  - {fileID: 21300000, guid: c36ae6980ec691d41a56e6611fccce29, type: 3}
+  - {fileID: 21300000, guid: 299acdb66d60a5d4097cf57c5efb2793, type: 3}
+  - {fileID: 21300000, guid: 120e6c7c34e734b46832cae6eccb23f3, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: dd673ae63573422489cdaff248c9a981, type: 3}
+  - {fileID: 21300000, guid: de7802bf4acf71541910c75c7787f68e, type: 3}
+  - {fileID: 21300000, guid: 3422e66d34381bd40beb013b29fd5fad, type: 3}
+  - {fileID: 21300000, guid: 7f39958b3451f974faa3e9f594496c44, type: 3}
+  - {fileID: 21300000, guid: 6ebfc75feaf838943b1ed1df42d0b96e, type: 3}

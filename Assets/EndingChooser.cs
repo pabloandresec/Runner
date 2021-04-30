@@ -49,7 +49,7 @@ public class EndingChooser : MonoBehaviour
 
         Debug.Log("Selected profession "+ combinations[selectedIndex].ProfessionName + " with " + combinationsPoints[selectedIndex]);
 
-        SelectEpilogue(combinations[selectedIndex]);
+        //SelectEpilogue(combinations[selectedIndex]);
     }
 
     private void SelectEpilogue(ProfessionCombinations professionCombinations)

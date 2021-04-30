@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Negocios
+  m_EditorClassIdentifier: 
+  professionName: Negocios
+  skins:
+  - {fileID: 21300000, guid: 2c9e94ea1cb454441b6fbd17ae39f714, type: 3}
+  - {fileID: 21300000, guid: c3bbac9aed2752441bb68ad8aaef4df0, type: 3}
+  - {fileID: 21300000, guid: 646f135f08c388545994096b9602426a, type: 3}
+  - {fileID: 21300000, guid: 9b6cfb54816c01b4696717b367543eb7, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: 2674375d8ae62494889ad35c04b13559, type: 3}
+  - {fileID: 21300000, guid: 81a063d504704cc44a937a2aa8ffa7fe, type: 3}
+  - {fileID: 21300000, guid: c9ef21724ed07714689dade45844d35f, type: 3}
+  - {fileID: 21300000, guid: 7fa8cdcbdc0f2de439360287ca614a4a, type: 3}
+  - {fileID: 21300000, guid: acfd778a49b4c8440a14a11ce2b511d4, type: 3}
+  - {fileID: 21300000, guid: 1e05795154c5ca74f882369c8c195168, type: 3}

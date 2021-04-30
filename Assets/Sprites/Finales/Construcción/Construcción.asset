@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: "Construcci\xF3n"
+  m_EditorClassIdentifier: 
+  professionName: "Construcci\xF3n"
+  skins:
+  - {fileID: 21300000, guid: 13dc0afad3a83634e95c8b1a1658c875, type: 3}
+  - {fileID: 21300000, guid: d7c01c11d182bc449917b3494cfd725f, type: 3}
+  - {fileID: 21300000, guid: 2c45e5b61356bb64ea1d32e54f5aa774, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: 773e7be36fccd134a93876acd1d01568, type: 3}
+  - {fileID: 21300000, guid: e68cc3564b245a44d8656f30efc5c156, type: 3}
+  - {fileID: 21300000, guid: ab8cbdc7a939f63408d3b2af0c27cb43, type: 3}
+  - {fileID: 21300000, guid: df7ad0794a6bf5e419295af59da2aa4f, type: 3}
+  - {fileID: 21300000, guid: c3e612135a652aa4ab492ba905b40e63, type: 3}

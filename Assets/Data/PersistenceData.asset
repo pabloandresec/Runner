@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5cf3d8113df0f4ca40bed969b86e8f, type: 3}
   m_Name: PersistenceData
   m_EditorClassIdentifier: 
-  layers: []
+  layers:
+  - layerIndex: 0
+    appearanceController: {fileID: 22100000, guid: 2d951168a947f85468f67f118f6057e2, type: 2}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    colorName: Black
+  - layerIndex: 1
+    appearanceController: {fileID: 0}
+    color: {r: 0.21568629, g: 0.58431375, b: 0.4901961, a: 1}
+    colorName: Black
+  - layerIndex: 2
+    appearanceController: {fileID: 9100000, guid: cb791e0bd91f9fd42bed4dc81f7ee055, type: 2}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    colorName: Black
   professionPicks:
-  - itemName: Pintar
-    amount: 2
-  - itemName: Informatica
-    amount: 1
-  - itemName: Musica
-    amount: 4
+  - itemName: "Ni\xF1os"
+    amount: 3
