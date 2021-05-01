@@ -7,6 +7,7 @@ public class PickAppearance : Pick
     [Header("Appearance")]
     [SerializeField] private AppearanceWrapper appearance;
     [SerializeField] private UnityEvent[] events;
+    [SerializeField] private bool lockAndDisableHairs = false;
 
     protected override void PickedUp(Collider2D collision)
     {
@@ -21,7 +22,16 @@ public class PickAppearance : Pick
                 events[i].Invoke();
             }
         }
+        if(lockAndDisableHairs && appearance.LayerIndex == 0)
+        {
+            collision.GetComponent<CharacterAppearanceHandler>().LockHairPicks();
+        }
+        else if(!lockAndDisableHairs && appearance.LayerIndex == 0)
+        {
+            collision.GetComponent<CharacterAppearanceHandler>().UnlockHairPicks();
+        }
         
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }

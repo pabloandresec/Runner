@@ -6,8 +6,18 @@ public class CharacterAppearanceHandler : MonoBehaviour
     [SerializeField] private PersistentData data;
     [SerializeField] private Animator[] layers;
 
+    private bool lockedHairs = false;
+
+    public bool LockedHairs { get => lockedHairs; }
+
     public void SwapAppearance(AppearanceWrapper appearance)
     {
+        if(lockedHairs && appearance.LayerIndex == 1)
+        {
+            Debug.Log("Hair locked!");
+            return;
+        }
+
         for (int i = 0; i < layers.Length; i++)
         {
             if(i == appearance.LayerIndex)
@@ -23,6 +33,20 @@ public class CharacterAppearanceHandler : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void LockHairPicks()
+    {
+        lockedHairs = true;
+        layers[1].runtimeAnimatorController = null;
+        layers[1].gameObject.GetComponent<SpriteRenderer>().sprite = null;
+        Debug.Log("Hair locked!");
+    }
+
+    public void UnlockHairPicks()
+    {
+        lockedHairs = false;
+        Debug.Log("Hair unlocked!");
     }
 
     public void ChangeLayerColorName(string colorName, int layerIndex)

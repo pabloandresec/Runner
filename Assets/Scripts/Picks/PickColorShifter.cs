@@ -22,6 +22,7 @@ public class PickColorShifter : Pick
         GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
         AppearanceHasUpdated();
         collision.GetComponent<CharacterAppearanceHandler>().ChangeLayerColorName(colorName, 1);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }

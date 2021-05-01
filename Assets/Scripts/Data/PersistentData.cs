@@ -26,7 +26,7 @@ public class PersistentData : ScriptableObject
 
     public void LoadPlayer(CharacterAppearanceHandler player)
     {
-        if(layers[0].AppearanceController == null)
+        if (layers[0].AppearanceController == null)
         {
             Debug.LogWarning("Save has not a base layer");
             return;
@@ -34,10 +34,21 @@ public class PersistentData : ScriptableObject
 
         for (int i = 0; i < 2; i++)
         {
-            if(layers[i].AppearanceController != null)
+            if (layers[i].AppearanceController != null)
             {
                 player.SwapAppearance(layers[i]);
             }
+        }
+
+        CheckForExeptions(player);
+    }
+
+    private void CheckForExeptions(CharacterAppearanceHandler player)
+    {
+        if (layers[0].AppearanceController.name.Contains("4"))
+        {
+            Debug.Log("Player has turbant");
+            player.LockHairPicks();
         }
     }
 

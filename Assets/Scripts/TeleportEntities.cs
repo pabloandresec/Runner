@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Events;
 
 public class TeleportEntities : MonoBehaviour
 {
     [SerializeField] private Transform destiny;
     [SerializeField] private CinemachineVirtualCamera cam;
     [SerializeField] private float restingTime = 4;
+    [SerializeField] private UnityEvent onTeleportEvent;
     bool warped = false;
     float tPassed = 0;
 
@@ -39,6 +41,7 @@ public class TeleportEntities : MonoBehaviour
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
         if (rb != null && !warped)
         {
+            onTeleportEvent?.Invoke();
             posPlayerDiff = rb.transform.position - transform.position;
             finalPos = destiny.position + posPlayerDiff;
             playerCamDifference = cam.transform.position - rb.transform.position;

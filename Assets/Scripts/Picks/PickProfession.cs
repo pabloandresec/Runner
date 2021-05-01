@@ -15,6 +15,7 @@ public class PickProfession : Pick
         base.PickedUp(collision);
         onPickedItem?.Invoke(id, this);
         GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().PlaySFX(onPickSoundIndex);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }

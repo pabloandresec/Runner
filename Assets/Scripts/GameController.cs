@@ -109,6 +109,22 @@ public class GameController : MonoBehaviour
             }
         }
     }
+
+    public void EnableDirectChilds(Transform t)
+    {
+        for (int i = 0; i < t.childCount; i++)
+        {
+            t.GetChild(i).gameObject.SetActive(true);
+        }
+    }
+
+    public void DisableDirectChilds(Transform t)
+    {
+        for (int i = 0; i < t.childCount; i++)
+        {
+            t.GetChild(i).gameObject.SetActive(false);
+        }
+    }
 }
 
 public enum LevelType
