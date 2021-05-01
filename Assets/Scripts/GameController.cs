@@ -23,13 +23,13 @@ public class GameController : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterAppearanceHandler>();
         }
-        
         gameData.SetLayersAmount(layersParent.childCount);
-        gameData.LoadPlayer(player);
+        
 
         professionPicks = FindObjectsOfType<PickProfession>();
-        if(professionPicks.Length > 2)
+        if(professionPicks.Length > 2) // Esto significa que esta en el nivel de professiones
         {
+            gameData.LoadPlayer(player);
             pickedItems = 0;
             pickedItemsAmount = new Dictionary<string, int>();
             gameData.ClearPicks();
