@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7994121875175688761}
   - component: {fileID: 7994121875175688762}
-  - component: {fileID: 527814902294328397}
+  - component: {fileID: 7994121875175688763}
   m_Layer: 8
   m_Name: libro2
   m_TagString: Untagged
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7994121875175688756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14.97, y: 6.44, z: 0}
   m_LocalScale: {x: 1.0910307, y: 1.0910307, z: 1.0910307}
   m_Children: []
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &527814902294328397
-BoxCollider2D:
+--- !u!60 &7994121875175688763
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025371611, y: 0.042286158}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -106,6 +106,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8110834, y: 0.9072542}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.91999996, y: -0.405}
+      - {x: 0.95, y: -0.385}
+      - {x: 0.93280333, y: 0.49939355}
+      - {x: -0.89, y: 0.4920081}
+      - {x: -0.91999996, y: -0.15613167}
+      - {x: -0.87160873, y: -0.38451123}
+      - {x: -0.42261505, y: -0.41060644}
