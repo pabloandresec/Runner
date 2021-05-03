@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ed1a1cc3581d9bf4bbaa749751517119, type: 3}
   - {fileID: 21300000, guid: 2459ad8e74ab7094da3bb8b09a8691ff, type: 3}
   - {fileID: 21300000, guid: dc6542390853456478f9c418a7b41ad9, type: 3}
+  - {fileID: 21300000, guid: 57438fcb2af059246bc1cf802ba4f40c, type: 3}
   hairs:
   - {fileID: 21300000, guid: bbfe13fb9fc6c4b4c8c95e6b1ca440ac, type: 3}
   - {fileID: 21300000, guid: f79f7ed1b2fa7484e9995d703ced64d7, type: 3}

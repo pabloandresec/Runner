@@ -1507,6 +1507,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8d9974d298548234aa7c2e45bc9c0aaa, type: 2}
   - {fileID: 11400000, guid: ebeaea4777823a34483b7f80b874ab87, type: 2}
   - {fileID: 11400000, guid: 543604b48db090444be82d5e460cc451, type: 2}
+  - {fileID: 11400000, guid: e36ff18c22b4d2345a22412d400c9d93, type: 2}
+  - {fileID: 11400000, guid: 7e7b6f52605ff1d43aeb8c1923523277, type: 2}
   layers:
   - {fileID: 932637751}
   - {fileID: 858634820}

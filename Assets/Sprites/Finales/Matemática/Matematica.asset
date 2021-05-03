@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1456d8760a11444c8e078b25c32ff5a, type: 3}
+  m_Name: Matematica
+  m_EditorClassIdentifier: 
+  professionName: Matematica
+  skins:
+  - {fileID: 21300000, guid: 1b677b7ad9dff794db0c048becacd934, type: 3}
+  - {fileID: 21300000, guid: 2ac9224f375b4ff42a12185496265bd1, type: 3}
+  - {fileID: 21300000, guid: bdf1b990e94576f4d9e649c1f1fe79d8, type: 3}
+  - {fileID: 21300000, guid: e03f472265197754db465e0390a7614c, type: 3}
+  hairs:
+  - {fileID: 21300000, guid: b8e8426cf23cdea40a9cb28c53ff2839, type: 3}
+  - {fileID: 21300000, guid: fc4ab4f0f4d623d4b9384ce5af9c6ddc, type: 3}
+  - {fileID: 21300000, guid: 4667305f43dc73246842059d68cc011d, type: 3}
+  - {fileID: 21300000, guid: 03c62f80a8b3ded48a54ffd96034c3ed, type: 3}
+  - {fileID: 21300000, guid: 5e9befeecddb96140a7beca54c3667ca, type: 3}
+  - {fileID: 21300000, guid: fd41f3d5dc12b07469372c445848e7bc, type: 3}
