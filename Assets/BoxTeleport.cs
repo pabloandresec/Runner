@@ -35,6 +35,10 @@ public class BoxTeleport : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
+        if(rb.tag != "Player")
+        {
+            return;
+        }
         if (rb != null && !warping)
         {
             OnBoxEnter?.Invoke();
@@ -47,7 +51,7 @@ public class BoxTeleport : MonoBehaviour
 
             LeanTween.move(rb.gameObject, tpPoint.position, animTime);//move to tpPoint tween
             LeanTween.value(cam.gameObject, v3 => trans.m_TrackedObjectOffset = v3, ogOffset, Vector3.zero, animTime * 0.9f); // offset tween
-            LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, ortGraphicSize, 0.1f, animTime + animTime * 0.1f).setOnComplete(() => { // zoom in tween
+            LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, ortGraphicSize, 0.1f, animTime + animTime * 0.05f).setOnComplete(() => { // zoom in tween
                 //Cuando se termine de hacer un zoom in a la caja
                 if(teleportToNextLevel)
                 {
@@ -57,7 +61,7 @@ public class BoxTeleport : MonoBehaviour
                 {
                     Teleport(rb);
                     LeanTween.value(cam.gameObject, v3 => trans.m_TrackedObjectOffset = v3, Vector3.zero, ogOffset, animTime * 0.9f); // offset tween
-                    LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, 0.1f, ortGraphicSize, animTime).setOnComplete(() => { // zoom out tween
+                    LeanTween.value(cam.gameObject, f => cam.m_Lens.OrthographicSize = f, 0.05f, ortGraphicSize, animTime).setOnComplete(() => { // zoom out tween
                                                                                                                                                 //Cuando se termine de hacer un zoom out a la caja
                         warping = false;
                     });
