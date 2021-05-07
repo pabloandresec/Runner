@@ -1930,7 +1930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231814921}
   m_Layer: 0
-  m_Name: Cartuchera
+  m_Name: Transportador_Cartuchera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1950,7 +1950,7 @@ Transform:
   - {fileID: 1784554271}
   - {fileID: 684781606}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &234323861 stripped
 Transform:
@@ -5726,7 +5726,7 @@ GameObject:
   - component: {fileID: 684781606}
   - component: {fileID: 684781602}
   m_Layer: 8
-  m_Name: Destiny
+  m_Name: Cartuchera_Destiny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5773,7 +5773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684781601}
   m_LocalRotation: {x: -0, y: -0, z: -0.9659252, w: 0.25882134}
-  m_LocalPosition: {x: -233.71634, y: 33.424225, z: 1.0102437}
+  m_LocalPosition: {x: -232.809, y: 33.626, z: 1.0102437}
   m_LocalScale: {x: 1.1385922, y: 1.1385922, z: 1.1385921}
   m_Children:
   - {fileID: 1086780959}
@@ -7206,63 +7206,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ae73062e41fd943928bd88e7369b17, type: 3}
---- !u!1 &915699538
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 915699540}
-  - component: {fileID: 915699539}
-  m_Layer: 8
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &915699539
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915699538}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.540467, y: -0.1437937}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.3982716, y: 0.6330774}
-  m_EdgeRadius: 0
---- !u!4 &915699540
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915699538}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.57, y: 3.503, z: -18.351202}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &923154326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 884171161602808521, guid: 1cbb843e31508534c94810cd9e1934d8, type: 3}
@@ -15285,7 +15228,7 @@ GameObject:
   - component: {fileID: 1784554273}
   - component: {fileID: 1784554272}
   m_Layer: 8
-  m_Name: Origin
+  m_Name: Cartuchera_Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15350,7 +15293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784554269}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
-  m_LocalPosition: {x: -1.5863419, y: -1.3257742, z: 1.0102437}
+  m_LocalPosition: {x: -0.42, y: -0.68, z: 1.0102437}
   m_LocalScale: {x: 1.1385921, y: 1.1385921, z: 1.1385921}
   m_Children:
   - {fileID: 828404273}
@@ -15474,7 +15417,7 @@ PolygonCollider2D:
       - {x: 2.162825, y: 0.8746771}
       - {x: 2.3799276, y: -0.68748647}
       - {x: -1.5062566, y: -0.4944958}
-      - {x: -1.2982333, y: 0.8485458}
+      - {x: -1.4092443, y: 0.8207926}
       - {x: -1.0763171, y: 0.8266594}
       - {x: -1.0699383, y: 0.89486814}
       - {x: -1.4586848, y: 0.8974852}
@@ -16116,6 +16059,7 @@ MonoBehaviour:
   fadeDirection: 0
   fadeTime: 0.2
   blackOverlay: {fileID: 1542046908}
+  unfadeOnStart: 1
 --- !u!1001 &1844626667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16979,7 +16923,7 @@ GameObject:
   m_Layer: 8
   m_Name: Destiny_point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

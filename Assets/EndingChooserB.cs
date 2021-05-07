@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EndingChooserB : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class EndingChooserB : MonoBehaviour
     [SerializeField] private List<ProfessionAppearanceData> professions;
     [Header("UI")]
     [SerializeField] private Image[] layers;
+    [SerializeField] private TextMeshProUGUI[] texts;
 
     private void Start()
     {
         CheckResults();
+
     }
 
     private void CheckResults()
