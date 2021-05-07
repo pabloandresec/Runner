@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 49637e61c60237d43a94fe58c842fcdc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SF Cartoonist Hand
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 97bfc317fc304fd469f9d904228f03b4, type: 3}
+  - {fileID: 12800000, guid: 00ee4e2827d036e479fb80b1a260e751, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

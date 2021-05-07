@@ -15,6 +15,7 @@ public class MenuController : MonoBehaviour
     private Dictionary<string, Vector2> menuPositions;
     protected bool swapingMenus;
     [SerializeField] protected Image blackOverlay;
+    [SerializeField] protected bool unfadeOnStart = true;
 
 
     private void Start()
@@ -30,7 +31,10 @@ public class MenuController : MonoBehaviour
             blackOverlay.gameObject.SetActive(true);
             blackOverlay.raycastTarget = true;
             blackOverlay.color = Color.black;
-            UnfadeScreenOverlay();
+            if(unfadeOnStart)
+            {
+                UnfadeScreenOverlay();
+            }
         }
     }
 
