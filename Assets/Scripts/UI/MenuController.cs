@@ -38,7 +38,7 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    protected void UnfadeScreenOverlay()
+    public void UnfadeScreenOverlay()
     {
         LeanTween.color(blackOverlay.GetComponent<RectTransform>(), Color.clear, 1f).setOnComplete(() => { blackOverlay.raycastTarget = false; });
     }

@@ -17,7 +17,15 @@ public class EndingChooserB : MonoBehaviour
     private void Start()
     {
         CheckResults();
-
+        foreach (TextMeshProUGUI t in texts)
+        {
+            t.gameObject.SetActive(false);
+        }
+        LeanTween.value(texts[0].gameObject, f => { texts[0].fontSize = f; }, texts[0].fontSize, texts[0].fontSize + 20f, 2f).setOnComplete(() => {
+            LeanTween.value(texts[1].gameObject, f => { texts[0].fontSize = f; }, texts[0].fontSize, texts[0].fontSize + 20f, 2f).setOnComplete(() => {
+                GameObject.FindGameObjectWithTag("UI").GetComponent<MenuController>().UnfadeScreenOverlay();
+            });
+        });
     }
 
     private void CheckResults()
