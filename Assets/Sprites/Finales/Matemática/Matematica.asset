@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 03c62f80a8b3ded48a54ffd96034c3ed, type: 3}
   - {fileID: 21300000, guid: 5e9befeecddb96140a7beca54c3667ca, type: 3}
   - {fileID: 21300000, guid: fd41f3d5dc12b07469372c445848e7bc, type: 3}
+  textA: Tu agilidad metal te permitio ser...
+  textB: Matematico

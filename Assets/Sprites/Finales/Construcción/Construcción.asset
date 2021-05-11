@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ab8cbdc7a939f63408d3b2af0c27cb43, type: 3}
   - {fileID: 21300000, guid: df7ad0794a6bf5e419295af59da2aa4f, type: 3}
   - {fileID: 21300000, guid: c3e612135a652aa4ab492ba905b40e63, type: 3}
+  textA: "Tu fuerza y creatividad \nte hizo..."
+  textB: Constructor

@@ -19,13 +19,9 @@ public class EndingChooserB : MonoBehaviour
         CheckResults();
         foreach (TextMeshProUGUI t in texts)
         {
-            t.gameObject.SetActive(false);
+            t.gameObject.SetActive(true);
         }
-        LeanTween.value(texts[0].gameObject, f => { texts[0].fontSize = f; }, texts[0].fontSize, texts[0].fontSize + 20f, 2f).setOnComplete(() => {
-            LeanTween.value(texts[1].gameObject, f => { texts[0].fontSize = f; }, texts[0].fontSize, texts[0].fontSize + 20f, 2f).setOnComplete(() => {
-                GameObject.FindGameObjectWithTag("UI").GetComponent<MenuController>().UnfadeScreenOverlay();
-            });
-        });
+        
     }
 
     private void CheckResults()
@@ -47,10 +43,12 @@ public class EndingChooserB : MonoBehaviour
     private void SelectEpilogue(ProfessionAppearanceData profession)
     {
         layers[0].sprite = SelectSkin(profession);
+
         if(layers[0].sprite == null)
         {
             Debug.LogWarning("No base selected");
         }
+
         if(data.Layers[1].AppearanceController != null)
         {
             layers[1].sprite = SelectHair(profession);
@@ -65,6 +63,9 @@ public class EndingChooserB : MonoBehaviour
                 layers[1].gameObject.SetActive(true);
             }
         }
+
+        texts[0].text = profession.TextA;
+        texts[1].text = profession.TextB;
     }
 
     private Sprite SelectSkin(ProfessionAppearanceData profession)

@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7fa8cdcbdc0f2de439360287ca614a4a, type: 3}
   - {fileID: 21300000, guid: acfd778a49b4c8440a14a11ce2b511d4, type: 3}
   - {fileID: 21300000, guid: 1e05795154c5ca74f882369c8c195168, type: 3}
+  textA: Tu fortitud mental te convirtio en
+  textB: Economista

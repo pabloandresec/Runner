@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 65aade39e32e83e48a88eb0d6e75e625, type: 3}
   - {fileID: 21300000, guid: 8ec216e6c2680d04a8485b71e32e3fee, type: 3}
   - {fileID: 21300000, guid: 290e4ec795111ec44badb2829fe3ae0e, type: 3}
+  textA: "Tu gran capacidad de \neducar te hizo..."
+  textB: Profesor

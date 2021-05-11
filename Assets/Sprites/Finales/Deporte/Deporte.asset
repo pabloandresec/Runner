@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: daa8375e91c5d744b9023858f1b61ea4, type: 3}
   - {fileID: 21300000, guid: d6b20676faac1fe428707d9bbc527cc6, type: 3}
   - {fileID: 21300000, guid: 51e2f9f97d7eba14b8e64ff538d372a1, type: 3}
+  textA: "Tu capacidad atletica\n te convirtio en..."
+  textB: Deportista
