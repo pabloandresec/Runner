@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
   - layerIndex: 0
-    appearanceController: {fileID: 22100000, guid: 2d951168a947f85468f67f118f6057e2, type: 2}
+    appearanceController: {fileID: 22100000, guid: 7511ab11df4032a4f86982e3f3bb2c5f, type: 2}
     color: {r: 1, g: 1, b: 1, a: 1}
     colorName: Black
   - layerIndex: 1
-    appearanceController: {fileID: 0}
-    color: {r: 0.21568629, g: 0.58431375, b: 0.4901961, a: 1}
-    colorName: Black
+    appearanceController: {fileID: 22100000, guid: 01c6f035ccbe3fd45b1dcd3d9e6cdf30, type: 2}
+    color: {r: 0.9176471, g: 0.67058825, b: 0.40000004, a: 1}
+    colorName: 
   - layerIndex: 2
     appearanceController: {fileID: 9100000, guid: cb791e0bd91f9fd42bed4dc81f7ee055, type: 2}
     color: {r: 1, g: 1, b: 1, a: 1}
     colorName: Black
   professionPicks:
-  - itemName: Mecanica
+  - itemName: Educacion
     amount: 3
