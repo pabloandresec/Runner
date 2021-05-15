@@ -40,13 +40,22 @@ public class MenuController : MonoBehaviour
 
     public void UnfadeScreenOverlay()
     {
-        LeanTween.color(blackOverlay.GetComponent<RectTransform>(), Color.clear, 1f).setOnComplete(() => { blackOverlay.raycastTarget = false; });
+        CanvasGroup overlayCanvasGroup = blackOverlay.GetComponent<CanvasGroup>();
+        //LeanTween.color(blackOverlay.gameObject, Color.clear, 1f).setOnComplete(() => { blackOverlay.raycastTarget = false; });
+        LeanTween.value(blackOverlay.gameObject, (nc) => { overlayCanvasGroup.alpha = nc; }, 1f, 0f, 1f).setOnComplete(() => {
+            blackOverlay.raycastTarget = false;
+            overlayCanvasGroup.gameObject.SetActive(false);
+        });
     }
 
     protected void FadeScreenOverlay()
     {
+        blackOverlay.gameObject.SetActive(true);
         blackOverlay.raycastTarget = true;
-        LeanTween.color(blackOverlay.GetComponent<RectTransform>(), Color.black, 1f);
+        CanvasGroup overlayCanvasGroup = blackOverlay.GetComponent<CanvasGroup>();
+        //LeanTween.color(blackOverlay.gameObject, Color.black, 1f);
+        //LeanTween.color(blackOverlay.gameObject, Color.clear, 1f).setOnComplete(() => { blackOverlay.raycastTarget = false; });
+        LeanTween.value(blackOverlay.gameObject, (nc) => { overlayCanvasGroup.alpha = nc; }, 0f, 1f, 1f);
     }
 
     protected void StoreMenuPositions()
@@ -135,15 +144,65 @@ public class MenuController : MonoBehaviour
 
     public void LoadScene(int index)
     {
-        if(blackOverlay != null)
+        if (blackOverlay != null)
         {
-            blackOverlay.raycastTarget = true;
-            LeanTween.color(blackOverlay.GetComponent<RectTransform>(), Color.black, 1f).setOnComplete(() => { SceneManager.LoadScene(index);  });
+            StartCoroutine(AsyncLoadScene(index));
         }
         else
         {
             SceneManager.LoadScene(index);
         }
+    }
+    public void LoadScene(string sceneName)
+    {
+        if (blackOverlay != null)
+        {
+            StartCoroutine(AsyncLoadScene(sceneName));
+        }
+        else
+        {
+            SceneManager.LoadScene("Ending_" + sceneName);
+        }
+    }
+
+    private IEnumerator AsyncLoadScene(string sceneName)
+    {
+        float tP = 0;
+        AsyncOperation loadEndingOP = SceneManager.LoadSceneAsync("Ending_" + sceneName,LoadSceneMode.Single);
+        bool doneFade = false;
+        //LeanTween.color(blackOverlay.GetComponent<RectTransform>(), Color.black, 1f).setOnComplete(() => {
+        //    Debug.Log("Fade completed");
+        //    doneFade = true; });
+
+        blackOverlay.gameObject.SetActive(true);
+        blackOverlay.raycastTarget = true;
+        CanvasGroup overlayCanvasGroup = blackOverlay.GetComponent<CanvasGroup>();
+        LeanTween.value(blackOverlay.gameObject, (nc) => { overlayCanvasGroup.alpha = nc; }, 0f, 1f, 1f).setOnComplete(() => doneFade = true);
+
+        while (!loadEndingOP.isDone && !doneFade)
+        {
+            tP += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log("Time Passed = " + tP);
+        Debug.Log("Completed!");
+    }
+    private IEnumerator AsyncLoadScene(int sceneIndex)
+    {
+        float tP = 0;
+        AsyncOperation loadEndingOP = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Single);
+        bool doneFade = false;
+        blackOverlay.gameObject.SetActive(true);
+        blackOverlay.raycastTarget = true;
+        CanvasGroup overlayCanvasGroup = blackOverlay.GetComponent<CanvasGroup>();
+        LeanTween.value(blackOverlay.gameObject, (nc) => { overlayCanvasGroup.alpha = nc; }, 0f, 1f, 1f).setOnComplete(() => doneFade = true);
+
+        while (!loadEndingOP.isDone && !doneFade)
+        {
+            tP += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log("Completed!");
     }
 
     public void TweenOverlayAlpha(float alpha)

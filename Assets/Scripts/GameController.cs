@@ -104,7 +104,8 @@ public class GameController : MonoBehaviour
         {
             if(pairPick.Value >= 3)
             {
-                GameObject.FindGameObjectWithTag("UI").GetComponent<GameUI>().LoadScene(3);
+                player.GetComponent<Motor>().StopMoving();
+                GameObject.FindGameObjectWithTag("UI").GetComponent<GameUI>().LoadScene(pairPick.Key);
                 return;
             }
         }

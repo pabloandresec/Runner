@@ -25,6 +25,7 @@ public class Motor : MonoBehaviour
     [SerializeField] private float jumpForce = 6;
     [Tooltip("Solo valido en motion INSTANTANEOUS")]
     [SerializeField] private float slideSpeed = 5;
+    private bool canMove = true;
     
     private Vector2 currentMotion = Vector2.zero;
     private bool isGrounded = false;
@@ -83,6 +84,8 @@ public class Motor : MonoBehaviour
 
     private void MoveAcceleration(bool slide)
     {
+        if (!canMove)
+            return;
         currentMotion = rb.velocity;
         if (IsGrounded)
         {
@@ -123,8 +126,18 @@ public class Motor : MonoBehaviour
         }
     }
 
+    public void StopMoving()
+    {
+        canMove = false;
+        currentMotion = new Vector2(0, rb.velocity.y);
+        rb.velocity = new Vector2(0,rb.velocity.y);
+    }
+
     private void MoveAccelerationExp(bool slide)
     {
+        if (!canMove)
+            return;
+
         if (IsGrounded && colliding)
         {
             if (getUpLocked)
@@ -163,6 +176,9 @@ public class Motor : MonoBehaviour
 
     private void MoveInstantaneous(bool slide)
     {
+        if (!canMove)
+            return;
+
         if (IsGrounded)
         {
             if (getUpLocked) slide = true; //trabar slide si esta por debajo de algo aun
@@ -207,7 +223,10 @@ public class Motor : MonoBehaviour
 
     public void Jump(bool jump)
     {
-        if(isGrounded && jump && !slideState)
+        if (!canMove)
+            return;
+
+        if (isGrounded && jump && !slideState)
         {
             if(motionMode == MotionMode.ACCELERATION)
             {

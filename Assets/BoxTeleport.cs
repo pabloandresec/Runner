@@ -63,6 +63,10 @@ public class BoxTeleport : MonoBehaviour
                     tgt.gameObject.SetActive(false);
                     StartCoroutine(WaitAndExecute(restTime, MoveAndZoomToTGT));
                 });//move player to tpPoint tween
+                if (teleportToNextLevel)
+                {
+                    GameObject.FindGameObjectWithTag("UI").GetComponent<MenuController>().LoadScene(nextLevelBuildIndex);
+                }
             }
         }
     }
@@ -82,7 +86,8 @@ public class BoxTeleport : MonoBehaviour
           //Cuando se termine de hacer un zoom in a la caja
             if (teleportToNextLevel)
             {
-                SceneManager.LoadScene(nextLevelBuildIndex);
+                //GameObject.FindGameObjectWithTag("UI").GetComponent<MenuController>().LoadScene(nextLevelBuildIndex);
+                //SceneManager.LoadScene(nextLevelBuildIndex);
             }
             else
             {
