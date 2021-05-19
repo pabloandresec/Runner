@@ -205,6 +205,11 @@ public class MenuController : MonoBehaviour
         Debug.Log("Completed!");
     }
 
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
+
     public void TweenOverlayAlpha(float alpha)
     {
         Color newColor = new Color(1, 1, 1, alpha);
