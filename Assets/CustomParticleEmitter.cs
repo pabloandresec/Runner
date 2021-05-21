@@ -24,11 +24,12 @@ public class CustomParticleEmitter : MonoBehaviour
     }
 
     private void Update()
-    {
+    {/*
         if(Input.GetKeyDown(KeyCode.P))
         {
             Emit();
         }
+        */
         if(active)
         {
             tPassed += Time.deltaTime;

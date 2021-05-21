@@ -15,10 +15,11 @@ public class MenuController : MonoBehaviour
     private Dictionary<string, Vector2> menuPositions;
     protected bool swapingMenus;
     [SerializeField] protected Image blackOverlay;
+    protected Button bu;
     [SerializeField] protected bool unfadeOnStart = true;
 
 
-    private void Start()
+    private void Awake()
     {
         Init();
     }
@@ -132,7 +133,7 @@ public class MenuController : MonoBehaviour
                 t += new Vector2(rt.rect.size.x / 2, 0);
                 break;
             case 2: //South
-                t -= new Vector2(0, rt.rect.size.y / 2);
+                t -= new Vector2(0, Screen.height * 0.5f);
                 break;
             case 3: //West
                 t -= new Vector2(rt.rect.size.x / 2, 0);
@@ -250,11 +251,34 @@ public class MenuController : MonoBehaviour
         });
     }
 
+    public void FadeInMenu(GameObject menu, Action onComplete)
+    {
+        swapingMenus = true;
+
+        RectTransform menuRect = menu.GetComponent<RectTransform>();
+        Vector2 intialPos = menuRect.anchoredPosition + GetFadeTargetPosition(menuRect);
+        menuRect.anchoredPosition = intialPos;
+        //Debug.Log("getting " + menu.transform.name + " og pos");
+        Vector2 tgtPos = menuPositions[menu.transform.name];
+
+        SetAlpha(menu.GetComponent<CanvasGroup>(), 0, 1);
+        menu.SetActive(true);
+        LeanTween.value(menu, (vec) =>
+        {
+            menuRect.anchoredPosition = vec;
+        }, intialPos, tgtPos, fadeTime).setOnComplete(() =>
+        {
+            swapingMenus = false;
+            onComplete?.Invoke();
+        });
+    }
+
     public void FadeOutMenu(GameObject menu)
     {
         swapingMenus = true;
 
         RectTransform menuRect = menu.GetComponent<RectTransform>();
+        menuRect.anchoredPosition = menuPositions[menu.transform.name];
         Vector2 intialPos = menuRect.anchoredPosition;
         Vector2 tgtPos = menuRect.anchoredPosition + GetFadeTargetPosition(menuRect);
 
@@ -274,6 +298,7 @@ public class MenuController : MonoBehaviour
         swapingMenus = true;
 
         RectTransform menuRect = menu.GetComponent<RectTransform>();
+        menuRect.anchoredPosition = menuPositions[menu.transform.name];
         Vector2 intialPos = menuRect.anchoredPosition;
         Vector2 tgtPos = menuRect.anchoredPosition + GetFadeTargetPosition(menuRect);
 
@@ -291,7 +316,6 @@ public class MenuController : MonoBehaviour
 
     public void FadeSwapMenu(GameObject current, GameObject next, Action _OnFadeEnd)
     {
-        fadeDirection = 1;
         FadeInMenu(next);
         FadeOutMenu(current, _OnFadeEnd);
     }

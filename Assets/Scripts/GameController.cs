@@ -48,11 +48,13 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.KeypadMultiply))
         {
             int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextScene);
         }
+        */
     }
 
     private void OnDisable()
@@ -89,14 +91,14 @@ public class GameController : MonoBehaviour
         if(pickedItemsAmount.ContainsKey(pickID))
         {
             int val = pickedItemsAmount[pickID];
-            Debug.Log("El sistema ya tenia " + val + " picks de " + pickID);
+            //Debug.Log("El sistema ya tenia " + val + " picks de " + pickID);
             val++;
             pickedItemsAmount[pickID] = val;
-            Debug.Log("El sistema tiene en total " +val + " picks de " + pickID);
+            //Debug.Log("El sistema tiene en total " +val + " picks de " + pickID);
         }
         else
         {
-            Debug.Log("El sistema ha agregado " + pickID);
+            //Debug.Log("El sistema ha agregado " + pickID);
             pickedItemsAmount.Add(pickID, 1);
         }
 
