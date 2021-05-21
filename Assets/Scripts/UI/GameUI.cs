@@ -29,20 +29,14 @@ public class GameUI : MenuController
 
     public void PauseGame()
     {
-        SetFadeDirection(0);
-        FadeSwapMenu(mainMenus[0], mainMenus[1], () =>
-          {
-              gamePaused = true;
-              Time.timeScale = 0;
-          });
+        SwitchMenu(1);
+        gamePaused = true;
+        Time.timeScale = 0;
     }
     public void UnPauseGame()
     {
-        SetFadeDirection(2);
+        gamePaused = false;
         Time.timeScale = 1;
-        FadeSwapMenu(mainMenus[1], mainMenus[0], () =>
-        {
-            gamePaused = false;
-        });
+        SwitchMenu(0);
     }
 }

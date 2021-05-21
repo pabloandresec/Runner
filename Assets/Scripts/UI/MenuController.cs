@@ -113,7 +113,7 @@ public class MenuController : MonoBehaviour
     public void SetFadeDirection(int direction)
     {
         fadeDirection = Mathf.Clamp(direction, 0, 5);
-        Debug.Log("Direction");
+        //Debug.Log("Direction");
     }
 
     /// <summary>
