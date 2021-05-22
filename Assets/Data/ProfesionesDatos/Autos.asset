@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: efc51cd6c6604e341b4a8473dcb43ff2, type: 3}
   - {fileID: 21300000, guid: a95dcbca8d5ba1c4c8b2a30d49ec006b, type: 3}
   - {fileID: 21300000, guid: 976cc3295b0c8bf459fa2d736e5b7bb9, type: 3}
-  textA: "Tu pasion por los vehiculos\n te convirtio en..."
+  textA: "Tu pasi\xF3n por los veh\xEDculo\n te convirti\xF3 en..."
   textB: Corredore profesional!
