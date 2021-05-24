@@ -145,6 +145,7 @@ public class MenuController : MonoBehaviour
 
     public void LoadScene(int index)
     {
+        Time.timeScale = 1;
         if (blackOverlay != null)
         {
             StartCoroutine(AsyncLoadScene(index));
@@ -156,6 +157,12 @@ public class MenuController : MonoBehaviour
     }
     public void LoadScene(string sceneName)
     {
+        Motor m = GameObject.FindGameObjectWithTag("Player").GetComponent<Motor>();
+        if(m != null)
+        {
+            m.StopMoving();
+        }
+
         if (blackOverlay != null)
         {
             StartCoroutine(AsyncLoadScene(sceneName));

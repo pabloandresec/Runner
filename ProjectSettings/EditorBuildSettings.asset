@@ -50,4 +50,5 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Endings/Ending_Ni\xF1os.unity"
     guid: f4de1ad27ada89348a155c1d935ac7fc
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 43c5706e04031f84b93afd6170dbb311, type: 2}
