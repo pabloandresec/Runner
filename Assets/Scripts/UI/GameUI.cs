@@ -39,4 +39,11 @@ public class GameUI : MenuController
         Time.timeScale = 1;
         SwitchMenu(0);
     }
+
+    public void ShowHelp()
+    {
+        SwitchMenu(2);
+        gamePaused = true;
+        Time.timeScale = 0;
+    }
 }
