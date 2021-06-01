@@ -6236,6 +6236,7 @@ GameObject:
   - component: {fileID: 629057049}
   - component: {fileID: 629057048}
   - component: {fileID: 629057047}
+  - component: {fileID: 629057051}
   m_Layer: 5
   m_Name: But_Slide
   m_TagString: Untagged
@@ -6269,7 +6270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629057045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35fb6f13e3dbebc4dbd39e285e96b393, type: 3}
   m_Name: 
@@ -6356,6 +6357,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629057045}
   m_CullTransparentMesh: 0
+--- !u!114 &629057051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629057045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Keyboard>/s
 --- !u!1001 &630908551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19688,7 +19702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ControlPath: <Gamepad>/buttonSouth
+  m_ControlPath: <Keyboard>/w
 --- !u!114 &1907528202
 MonoBehaviour:
   m_ObjectHideFlags: 0
