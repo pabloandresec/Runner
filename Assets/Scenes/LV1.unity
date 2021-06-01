@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 33437690}
   - component: {fileID: 33437689}
   - component: {fileID: 33437688}
-  - component: {fileID: 33437691}
+  - component: {fileID: 33437692}
   m_Layer: 5
   m_Name: But_Slide
   m_TagString: Untagged
@@ -397,7 +397,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33437686}
   m_CullTransparentMesh: 0
---- !u!114 &33437691
+--- !u!114 &33437692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,10 +406,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 33437686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35fb6f13e3dbebc4dbd39e285e96b393, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1223440303}
+  m_ControlPath: <Keyboard>/s
 --- !u!4 &42587200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6745217975181024793, guid: cd0a76441a5eda8448d5deb464dc80f1, type: 3}
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ControlPath: <Gamepad>/buttonSouth
+  m_ControlPath: <Keyboard>/w
 --- !u!4 &247664472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7509958798669626411, guid: 030e12d202a16094fb7945128cd8028c, type: 3}
@@ -6758,7 +6758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &859578583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6779,7 +6779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &872441926 stripped
@@ -9214,17 +9214,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5196950315863404323, guid: fab2cbf4d6a3b9948888a2d0ca2d269b, type: 3}
   m_PrefabInstance: {fileID: 370454939}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1223440303 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 203433231105506215, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
-  m_PrefabInstance: {fileID: 203433231519926707}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f14f0d54a0dfc4aaeb4bdcaf3cc9a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1224833614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1905371231018750145, guid: 974a03ad23056014c8b0549f00005763, type: 3}
@@ -14950,6 +14939,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 203433231105506215, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: uiController
+      value: 
+      objectReference: {fileID: 1833677180}
     - target: {fileID: 203433231105506236, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
       propertyPath: m_Name
       value: Player

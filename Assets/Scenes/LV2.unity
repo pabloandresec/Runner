@@ -22692,6 +22692,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.49677178
       objectReference: {fileID: 0}
+    - target: {fileID: 203433231105506215, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
+      propertyPath: uiController
+      value: 
+      objectReference: {fileID: 1833677180}
     - target: {fileID: 203433231105506236, guid: 9c5396fbf0aa606439e22581cf8452b6, type: 3}
       propertyPath: m_Name
       value: Player

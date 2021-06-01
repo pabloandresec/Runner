@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 public class GameUI : MenuController
 {
     private bool gamePaused = false;
+    private bool gameOnHelp = false;
+
+    public bool GamePaused { get => gamePaused; }
+    public bool GameOnHelp { get => gameOnHelp; }
 
     private void Start()
     {
@@ -36,6 +40,10 @@ public class GameUI : MenuController
     public void UnPauseGame()
     {
         gamePaused = false;
+        if(gameOnHelp)
+        {
+            gameOnHelp = false;
+        }
         Time.timeScale = 1;
         SwitchMenu(0);
     }
@@ -43,6 +51,7 @@ public class GameUI : MenuController
     public void ShowHelp()
     {
         SwitchMenu(2);
+        gameOnHelp = true;
         gamePaused = true;
         Time.timeScale = 0;
     }

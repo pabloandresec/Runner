@@ -6,12 +6,14 @@ using UnityEngine.InputSystem;
 public class InputController : MonoBehaviour
 {
     [SerializeField] private Motor motor;
+    [SerializeField] private GameUI uiController;
     [SerializeField] float jumpCoolOff = 0.25f;
     private MobileInput inputs;
     private Vector2 input = Vector2.zero;
     private bool jump = false;
     private bool canJump = true;
     private bool slide = false;
+    private bool pressingSlidingButton = false;
     private float tPassed = 0;
 
     public void Slide()
@@ -22,31 +24,70 @@ public class InputController : MonoBehaviour
     private void Awake()
     {
         inputs = new MobileInput();
-        inputs.Touch.Slide.performed += ctx => Slide(ctx.ReadValue<float>());
-        inputs.Touch.Jump.performed += ctx => Jump(ctx);
+        inputs.Game.Slide.performed += ctx => Slide(ctx);
+        inputs.Game.Slide.canceled += ctx => Slide(ctx);
+        inputs.Game.Jump.performed += ctx => Jump(ctx);
+        inputs.Game.ShowHelp.performed += ctx => ShowHelpMenu(ctx);
+        inputs.Game.PauseGame.performed += ctx => ShowPauseMenu(ctx);
     }
 
     private void OnEnable()
     {
-        inputs.Enable();
+        inputs.Game.Enable();
     }
 
     private void OnDisable()
     {
-        inputs.Disable();
+        inputs.Game.Disable();
     }
 
-    private void Slide(float val)
+    private void Slide(InputAction.CallbackContext ctx)
     {
-        if(val < 0)
+        if (ctx.performed)
         {
-            slide = true;
+            pressingSlidingButton = true;
+        }
+        else
+        {
+            pressingSlidingButton = false;
         }
     }
 
     private void Jump(InputAction.CallbackContext ctx)
     {
         jump = true;
+    }
+
+    private void ShowHelpMenu(InputAction.CallbackContext ctx)
+    {
+        if(ctx.performed)
+        {
+            //Debug.Log("Pressing help button");
+            if (uiController.GameOnHelp)
+            {
+                uiController.UnPauseGame();
+            }
+            else
+            {
+                uiController.ShowHelp();
+            }
+        }
+    }
+
+    private void ShowPauseMenu(InputAction.CallbackContext ctx)
+    {
+        if(ctx.performed)
+        {
+            //Debug.Log("Pressing pause button");
+            if (uiController.GamePaused)
+            {
+                uiController.UnPauseGame();
+            }
+            else
+            {
+                uiController.PauseGame();
+            }
+        }
     }
 
     private void Start()
@@ -56,34 +97,7 @@ public class InputController : MonoBehaviour
 
     private void Update()
     {
-
-        /*
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            jump = true;
-        }
-        if (Input.GetAxisRaw("Vertical") == -1)
-        {
-            slide = true;
-        }
-        
-        if(Input.touchCount == 1)
-        {
-            Touch t = Input.GetTouch(0);
-            if (t.position.y > Screen.height / 2)
-            {
-                if(canJump)
-                {
-                    jump = true;
-                    canJump = false;
-                }
-            }
-            else
-            {
-                slide = true;
-            }
-        }
-        */
+        slide = pressingSlidingButton ? true : false;
 
         if (!canJump)
         {
